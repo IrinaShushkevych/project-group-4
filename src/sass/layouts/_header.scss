@@ -1,0 +1,80 @@
+.header {
+  background: rgba(17, 21, 24, 0.9);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__logo {
+  position: relative;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+
+  color: $color-title;
+  //   color: $color-text-accent; для открытого меню
+}
+
+// font-size: 26px; для tablet
+
+.header__image {
+  //   position: absolute;
+  //   content: '';
+  //   bottom: 3px;
+
+  fill: $color-accent;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.logo--accent {
+  color: $color-accent;
+}
+
+.logo--primary {
+  color: $color-title;
+  //   color: $color-text-accent; для открытого меню
+}
+
+.site-nav__item {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.site-nav__link {
+  color: $color-text-accent;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: $color-accent;
+}
+
+.button--primery {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 36px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  background-color: inherit;
+  color: $color-accent;
+
+  border: 2px solid $color-accent;
+  box-sizing: border-box;
+}
