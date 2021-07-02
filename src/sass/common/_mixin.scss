@@ -4,7 +4,7 @@
   justify-content: $jc;
 }
 
-@mixin fonts($ff: $font, $fw: 400, $fs: 10px, $lh: 1.2) {
+@mixin fonts($ff: $font, $fw: 500, $fs: 12px, $lh: 1.67) {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs;
