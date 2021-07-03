@@ -1,0 +1,36 @@
+<header class="header">
+    <div class="container header__container">  
+        <div class="header__thumb">
+            <div class="logo-thumb">     
+                <p class="header__logo">Hell<img class="header__image" src="./images/logo-fire.svg" alt="logo fire" width="14" height="19">EN</p>
+                <p class="logo logo--primary"><span class="logo logo--accent">HELLISH </span>english</p>
+            </div>
+            <button type="button" class="header__button header__button--opening" aria-expanded="false"
+                aria-controls="header__mobile-thumb" data-menu-button>
+                <svg class="header__icon" width="21px" height="12px" aria-label="Открываем мобильное меню">
+                    <use class="" href="./images/icons.svg#burger"></use>
+                    <!--  -->
+                </svg>
+            </button>
+        </div>
+
+        <div class="header__menu-container" id="header__mobile-thumb" data-menu>
+            <nav class="site-nav header__nav">
+                <button type="button" class="header__button header__button--closening" aria-expanded="false"
+                    aria-controls="header__mobile-thumb" data-menu-button-close>
+                    <svg class="header__icon" width="15px" height="15px" aria-label="Закрываем мобильное меню">
+                        <use class="" href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item item"><a href="#program" class="link site-nav__link">Studying program</a></li>
+                    <li class="site-nav__item item"><a href="#about" class="link site-nav__link">About</a></li>
+                    <li class="site-nav__item item"><a href="#reviews" class="link site-nav__link">Training options</a></li>
+                    <li class="site-nav__item item"><a href="#contacts" class="link site-nav__link">Contacts</a></li>
+                </ul>         
+            </nav>        
+            <button type="button" class="button button--accent">Consultation by phone</button>
+        </div>
+    </div>
+    
+</header>

@@ -1,10 +1,14 @@
 {
     "version": 3,
+
     "mappings": "AYAA,AAAA,gBAAgB,CAAA;EAChB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAmB;EAC5C,aAAa,EAAC,IAAI;CACjB;;AACD,AAAA,mBAAmB,CAAA;EACnB,gBAAgB,EAAE,OAAO;EACzB,SAAS,EAAE,KAAK;CACf;;AACD,AAAA,cAAc,CAAA;EACV,eAAe,EAAE,IAAI;CACxB;;AACD,AAAA,kCAAkC,CAAA;EAClC,gBAAgB,EAAE,OAAO;CACxB;;AAED,AAAA,wBAAwB,CAAA;EACpB,KAAK,EAAC,IAAI;CACV;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAClC,AAAA,wBAAwB,CAAA;IACpB,KAAK,EAAC,KACV;GAAC;;;AAGL,AAAA,yBAAyB,CAAA;EACrB,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;CACd;;AACD,AAAA,wBAAwB,CAAA;EACxB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,OAAO;CACb;;AAGD,AAAA,oCAAoC,CAAA;EAEpC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,OAAO;CACb;;AAED,AAAA,qCAAqC,CAAA;EVhDnC,WAAW,EDPN,YAAY,EAAE,UAAU;ECQ7B,WAAW,EUgDa,GAAG;EV/C3B,SAAS,EU+CoB,EAAE;EV9C/B,WAAW,EU8CqB,IAAI;EAClC,KAAK,EAAE,OAAO;CACjB;;AAED,AAAA,mCAAmC,CAAA;EVrDjC,WAAW,EDPN,YAAY,EAAE,UAAU;ECQ7B,WAAW,EUqDa,GAAG;EVpD3B,SAAS,EUoDoB,EAAE;EVnD/B,WAAW,EUmDqB,IAAI;EAClC,KAAK,EAAE,OAAO;CACjB;;AAED,AAAA,qBAAqB,CAAA;EACjB,KAAK,EAAC,IAAI;CACb",
-    "sources": [
+
+"sources": [
         "main.scss",
         "common/_variables.scss",
         "common/_mixin.scss",
+        "layouts/_placeholders.scss",
+        "layouts/_container.scss",
         "layouts/_header.scss",
         "layouts/_hero.scss",
         "layouts/_advantages.scss",
@@ -17,7 +21,9 @@
         "layouts/_reviews.scss",
         "layouts/_contacts.scss",
         "layouts/_footer.scss",
-        "components/_modal-form.scss"
+        "components/_modal-form.scss",
+        "components/_logo.scss",
+        "components/_button.scss"
     ],
     "names": [],
     "file": "main.css"

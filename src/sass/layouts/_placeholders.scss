@@ -1,0 +1,46 @@
+// Сброс настроек
+
+body {
+  margin: 0;
+  background-color: $color-text-accent;
+  color: $color-title;
+  font-family: $font;
+  //   letter-spacing: 0.03em;
+}
+
+// заголовки и параграфы
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// списки
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+// элементы списка
+.item {
+  list-style: none;
+}
+
+// ссылки
+.link {
+  text-decoration: none;
+}
+
+// картики
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
