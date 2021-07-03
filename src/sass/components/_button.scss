@@ -14,11 +14,23 @@
   border: none;
 
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    background-color: $color-text-accent;
+  }
 }
 
-.button.button--accsent {
-  background-color: inherit;
+.button.button--accent {
+  background-color: transparent;
   color: $color-accent;
 
   border: 2px solid $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    color: $color-text-accent;
+  }
 }
