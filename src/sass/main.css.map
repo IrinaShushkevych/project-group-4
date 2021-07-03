@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "AWAA,AAAA,UAAU,CAAC;EACT,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;CAgCrB;;AA/BE,AAAD,qBAAY,CAAC;EACX,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,MAAM;CACf;;AACA,AAAD,iBAAQ,CAAC;EACP,WAAW,EAAE,UAAU;EACvB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,YAA4B;EACnC,aAAa,EAAE,IAAI;CACpB;;AACA,AAAD,gBAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;CACjB;;AACA,AAAD,uBAAc,CAAC;EACb,WAAW,EAAE,UAAU;EACvB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,YAA4B;CACpC;;AAGH,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAE9B,AAAD,qBAAY,CAAC;IACX,YAAY,EAAE,IAAI;IAClB,aAAa,EAAE,IAAI;IACnB,KAAK,EAAE,KAAK;IACZ,SAAS,EAAE,IAAI;GAChB;;;AAIL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAClC,AAAA,UAAU,CAAC;IACT,WAAW,EAAE,KAAK;IAClB,cAAc,EAAE,KAAK;GAWtB;EAVE,AAAD,qBAAY,CAAC;IACX,YAAY,EAAE,MAAM;IACpB,aAAa,EAAE,MAAM;IACrB,KAAK,EAAE,MAAM;IACb,SAAS,EAAE,IAAI;GAChB;EACA,AAAD,iBAAQ,CAAC;IACP,SAAS,EAAE,IAAI;IACf,aAAa,EAAE,IAAI;GACpB",
+    "sources": [
+        "main.scss",
+        "common/_variables.scss",
+        "common/_mixin.scss",
+        "layouts/_header.scss",
+        "layouts/_hero.scss",
+        "layouts/_advantages.scss",
+        "layouts/_problems.scss",
+        "layouts/_how-we-do.scss",
+        "layouts/_program.scss",
+        "layouts/_benefits.scss",
+        "layouts/_about.scss",
+        "layouts/_guarantee.scss",
+        "layouts/_reviews.scss",
+        "layouts/_contacts.scss",
+        "layouts/_footer.scss",
+        "components/_modal-form.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

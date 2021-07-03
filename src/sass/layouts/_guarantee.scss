@@ -2,6 +2,8 @@
   padding-top: 50px;
   padding-bottom: 50px;
   &__conteiner {
+    display: block;
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     width: 280px;
@@ -20,6 +22,15 @@
   }
   &__list {
     display: flex;
+    list-style: none;
+  }
+  &__deskription {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var($color-text-alternative);
   }
 }
 
