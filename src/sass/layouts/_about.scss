@@ -1,0 +1,41 @@
+.about__title {
+  font-family: $font;
+  font-style: 400;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: $color-title;
+
+  &--second {
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+  }
+}
+.about__item {
+  font-family: $font;
+  font-style: 400;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  color: $color-title;
+}
+.about__text {
+  font-family: $font;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.17;
+  color: $color-text;
+}
+
+.about__link {
+  font-family: $font;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  text-decoration-line: underline;
+  color: $color-accent;
+}
