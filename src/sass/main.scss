@@ -1,6 +1,8 @@
 @import './common/variables';
 @import './common/mixin';
 
+@import './layouts/_placeholders';
+@import './layouts/_container';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/advantages';
