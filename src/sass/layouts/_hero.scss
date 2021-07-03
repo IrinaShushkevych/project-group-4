@@ -5,14 +5,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    font-style: 26px;
+    font-size: 26px;
     .hero & {
       margin-bottom: 95px;
     }
   }
 
   @media screen and (min-width: 1366px) {
-    font-style: 58px;
+    font-size: 58px;
   }
 }
 
@@ -45,6 +45,14 @@
       margin-bottom: 30px;
     }
   }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 20px;
+    line-height: 1.65;
+    &--accent {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .hero__block-img {
@@ -72,5 +80,11 @@
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     margin-bottom: 88px;
+  }
+}
+
+.hero__block-text {
+  @media screen and (min-width: 1366px) {
+    width: 660px;
   }
 }
