@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "common/_variables.scss",
+        "common/_mixin.scss",
+        "layouts/_header.scss",
+        "layouts/_hero.scss",
+        "layouts/_advantages.scss",
+        "layouts/_problems.scss",
+        "layouts/_how-we-do.scss",
+        "layouts/_program.scss",
+        "layouts/_benefits.scss",
+        "layouts/_about.scss",
+        "layouts/_guarantee.scss",
+        "layouts/_reviews.scss",
+        "layouts/_contacts.scss",
+        "layouts/_footer.scss",
+        "components/_modal-form.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
