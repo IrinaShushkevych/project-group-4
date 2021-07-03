@@ -1,0 +1,100 @@
+.reviews__header{
+font-weight: 800;
+font-size: 20px;
+line-height: 130%;
+text-align: center;
+letter-spacing: 0.03em;
+color: #111518;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin:0 auto;
+margin-bottom:15px;
+width:168px;
+}
+
+.reviews__container{
+display:block;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: #E5E5E5;
+width:320px;
+padding:0 20px;
+margin:0 auto;
+
+}
+
+.reviews__list{
+    list-style: none;
+    text-decoration: none;
+    padding-left:0;
+}
+.reviews__container-graduate-story{
+background-color: #FFFFFF;
+padding-bottom:70px;
+padding-right:20px;
+padding-left:20px;
+margin-bottom:20px;
+}
+
+.reviews__graduate-photo{
+    width:90px;
+    margin-bottom:20px;
+   }
+
+   @media screen and (min-width:768px){
+    .reviews__graduate-photo{
+        width:150px
+    }
+}
+
+.reviews__icon-social-net{
+    display: block;
+    width:30px;
+    height:30px;
+    margin:0 auto;
+}
+.reviews__graduate-title{
+font-weight: 800;
+font-size: 14px;
+line-height: 1.21;
+text-align: center;
+letter-spacing: 0.08em;
+color: #FF6B09;
+}
+
+
+.reviews__graduate-description-first{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.08em;
+color: #B9B9B9;
+}
+
+.reviews__graduate-description-second{
+    @include fonts($font, 700, 12,1.25);
+    color: #3D3D3D;
+}
+
+.reviews__graduate-description-link{
+    @include fonts($font, 700, 12,1.25);
+    color: #FF6B09;
+}
+.reviews__slider{
+    
+    width:180px;
+}
+
+.reviews__slider-list{
+display: flex;
+list-style: none;
+    text-decoration: none;
+    align-items:center;
+    justify-content: center;
+}
+
+.reviews__slider-icon{
+      width:25px;
+    height:25px;
+}
