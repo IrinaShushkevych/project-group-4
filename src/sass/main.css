@@ -46,7 +46,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #111518;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .guarantee-list {
@@ -74,6 +74,7 @@
   content: '';
   background-image: url(../images/marker-fire.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   height: 20px;
   width: 14.7px;
   fill: #ff6b09;
