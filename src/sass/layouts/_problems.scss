@@ -1,12 +1,14 @@
-.problems {
+.problems__wrapper {
   background-image: linear-gradient(to bottom, $color-title 75%, $color-text-accent 75% 100%);
+}
+.problems {
+  // background-image: linear-gradient(to bottom, $color-title 75%, $color-text-accent 75% 100%);
   padding-top: 27px;
   padding-bottom: 50px;
 
   @media screen and (min-width: 1366px) {
-    background-image: url(../images/fire.svg),
-      linear-gradient(to bottom, $color-title 75%, $color-text-accent 75% 100%);
-    background-position: right bottom 140px, 100%;
+    background-image: url(../images/fire.svg);
+    background-position: right bottom 140px;
     background-repeat: no-repeat;
     width: 399px;
     height: 445px;
@@ -28,6 +30,16 @@
   list-style-type: none;
   background-color: $color-text-accent;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  padding: 60px 13px 4px 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 45px 10px 96px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 98px 112px 60px 114px;
+  }
 }
 
 .problems__item {
@@ -37,26 +49,37 @@
   color: $color-title;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
-  &::before {
+
+  &::after {
     display: block;
     position: absolute;
     content: '';
     height: 2px;
-    width: 2px;
+    width: 14px;
     border-radius: 2px;
     background-color: $color-accent;
-    left: 0;
+    left: 0px;
+    top: -30px;
   }
 
   &::before {
-    display: block;
+    position: absolute;
+    display: inline-block;
     counter-increment: section;
     content: '0' counters(section, '.') ' ';
     @include fonts($font, 800, 14px, 1.21);
     letter-spacing: 0.08em;
     color: $color-accent;
-    padding-left: 10px;
+    left: 22px;
+    top: -37px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+  @media screen and (min-width: 1366px) {
+    flex-basis: calc((100% - 30px) / 3);
   }
 }
