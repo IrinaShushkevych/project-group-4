@@ -9,6 +9,11 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
+  @media screen and (min-width: 1366px) {
+    padding: 27px 70px;
+    @include fonts($font, 700, 14px, 1.21);
+  }
+
   background-color: $color-accent;
   color: $color-text-accent;
   border: none;
@@ -19,14 +24,28 @@
   &:focus {
     color: $color-accent;
     background-color: $color-text-accent;
+    border: 2px solid $color-accent;
   }
 }
 
 .button.button--accent {
+  display: block;
   background-color: transparent;
   color: $color-accent;
 
   border: 2px solid $color-accent;
+
+  // @media screen and (min-width: 768px) {
+  //   padding: 17px 5px;
+  // }
+  // @media screen and (max-width: 1365px) {
+  //   margin: 0 auto;
+  // }
+
+  @media screen and (min-width: 1366px) {
+    padding: 27px 24px;
+    @include fonts($font, 700, 14px, 1.21);
+  }
 
   &:hover,
   &:focus {

@@ -1,4 +1,5 @@
 (() => {
+
   const menuBtnRef = document.querySelectorAll('[data-certificate-button]');
   const BtnRef = document.querySelectorAll('[data-order-button]');
   const mobileMenuRef = document.querySelectorAll('[data-modal]');
@@ -37,3 +38,4 @@
   });
 
 })();
+
