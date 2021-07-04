@@ -33,8 +33,19 @@
   fill: $color-accent;
 }
 
+.footer .logo--primary {
+  padding-bottom: 20px;
+}
+
+.footer-tell__icon {
+  // color: $color-accent;
+  // fill: $color-accent;
+
+}
+
 .footer-list {
   padding-bottom: 30px;
+
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -42,12 +53,15 @@
     padding-bottom: 0;
     // text-align: right;
   }
+
 }
+
 
 .footer-tel__link {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
   line-height: 17.07px;
+
   font-size: 14px;
   color: $color-title;
 
@@ -77,6 +91,7 @@
     // margin: 0;
   }
 }
+
 
 .footer-down__copyright {
   padding: 20px 20px;
