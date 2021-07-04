@@ -5,18 +5,18 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  display: block;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 450px;
-    margin: 0 auto;
-  }
-}
+// .container {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
+//   display: block;
+// }
+// @media screen and (min-width: 480px) {
+//   .container {
+//     width: 450px;
+//     margin: 0 auto;
+//   }
+// }
 .how-we__title {
   font-family: $font;
   font-weight: 800;
@@ -27,15 +27,13 @@
   color: $color-title;
   margin-bottom: 30px;
 }
-.how-we__aft {
-  position: relative;
-}
-.how-we__aft::after {
+
+.how-we__item-title::after {
   position: absolute;
-  bottom: -10px;
-  left: 0;
+  bottom: 0;
+  left: 50%;
   align-items: center;
-  display: block;
+  display: flex;
   content: '';
   width: 15px;
   height: 2px;
@@ -53,6 +51,9 @@
 .how-we__link {
   padding-top: 30px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .how-we__list__item {
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
@@ -64,7 +65,20 @@
     margin-bottom: 13px;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .how-we__item-title::after {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    align-items: center;
+    display: block;
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: $color-accent;
+    border-radius: 2px;
+  }
+}
 .how-we__icon {
   justify-content: center;
   align-items: center;
@@ -83,6 +97,9 @@
   text-align: center;
   letter-spacing: 0.08em;
   color: $color-title;
+  position: relative;
+  // flex-grow: 1;
+  height: 56px;
 }
 .how-we__item-text {
   font-weight: 500;
@@ -92,6 +109,12 @@
   letter-spacing: 0.08em;
   color: $color-text;
   margin-top: 8px;
+}
+
+// title
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
 }
 
 // hover>>>>
@@ -108,17 +131,14 @@
 .how-we__link:hover .how-we__item-text {
   color: $color-text-accent;
 }
-.how-we__link:focus .how-we__aft::after,
-.how-we__link:hover .how-we__aft::after {
+.how-we__link:focus .how-we__item-title::after,
+.how-we__link:hover .how-we__item-title::after {
   background-color: $color-text-accent;
 }
 
 // tablet>>>>>
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
   .how-we__list {
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +156,7 @@
 @media screen and (min-width: 768px) {
   .how-we__link {
     padding-top: 40px;
-    padding-bottom: 5px;
+    padding-bottom: 28px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -144,6 +164,12 @@
 @media screen and (min-width: 768px) {
   .how-we__list__item {
     flex-basis: calc(100% / 2 - 20px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -157,27 +183,23 @@
   }
 }
 // 1200++++>>>>>
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1366px) {
   .how-we__list__item {
     flex-basis: calc(100% / 3 - 20px);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   .how-we__list__item:nth-child(2n-1) {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   .how-we__list__item:not(:nth-child(3n)) {
     margin-right: 20px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   .how-we__title {
     font-size: 46px;
     text-align: left;
@@ -187,7 +209,7 @@
 .how-we__link {
   height: 100%;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   .how-we__item-title {
     font-size: 20px;
     line-height: 1.4;
@@ -199,11 +221,25 @@
     line-height: 1.55;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   .how-we__link {
     padding-top: 40px;
     padding-bottom: 55px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .how-we__item-title::after {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    align-items: center;
+    display: block;
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: $color-accent;
+    border-radius: 2px;
   }
 }
