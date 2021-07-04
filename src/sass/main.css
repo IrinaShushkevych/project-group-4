@@ -844,4 +844,51 @@ ol {
   background-color: #ff6b09;
   color: #ffffff;
 }
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.footer .logo--primary {
+  padding-bottom: 20px;
+}
+
+.footer-list {
+  padding-bottom: 30px;
+}
+
+.footer-tell__icon {
+  width: 30px;
+  height: 29px;
+}
+
+.footer-tel__link {
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 17.07px;
+  size: 14px;
+  color: #111518;
+}
+
+.footer-link_inst {
+  background-image: url(.././images/instagram.svg);
+}
+
+.footer-item:last-child {
+  border-right: 1px solid #111518;
+}
+
+.footer-down__copyright {
+  padding: 20px 20px;
+  background-color: #111518;
+}
+
+.copyright {
+  font-style: normal;
+  size: 14px;
+  line-height: 28px;
+  color: #b9b9b9;
+}
 /*# sourceMappingURL=main.css.map */
