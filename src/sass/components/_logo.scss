@@ -1,0 +1,61 @@
+.header__logo {
+  @include fonts($font, 800, 16px, 1.23);
+  // 12px
+  letter-spacing: 0.04em;
+
+  color: $color-title;
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font, 800, 26px, 1.23);
+  }
+}
+
+.logo-thumb.logo-thumb--secondary {
+  // .header__mobile-thumb.is-open & {
+  //   }
+  padding: 30px 0 0 20px;
+  @media screen and (min-width: 768px) {
+    padding: 40px 0 0 40px;
+  }
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
+}
+
+.header__image {
+  margin: 0 4px -3px 4px;
+  width: 14px;
+  height: 19px;
+
+  fill: $color-accent;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: -5px;
+    width: 22px;
+    height: 30px;
+  }
+}
+
+.logo {
+  padding-left: 1px;
+  @include fonts($font, 700, 5px, 1.2);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include fonts($font, 700, 8px, 1.25);
+  }
+}
+
+.logo--accent {
+  color: $color-accent;
+}
+
+.logo--primary {
+  color: $color-title;
+}
+
+.logo.logo--secondary,
+.header__logo.header__logo--secondary {
+  color: $color-text-accent;
+}
