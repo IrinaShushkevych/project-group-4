@@ -1,0 +1,64 @@
+  .benefits__title {
+    @include fonts($font, 800, 24px);
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: $color-accent;
+    height: 80px;
+    max-width: 220px;
+  
+    &--text {
+      color: $color-accent;
+    }
+  }
+  .benefits__list {
+    counter-reset: section;
+    list-style-type: none;
+    background-color: $color-text-accent;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding: 61px 14px 4px 30px;
+    margin-bottom: 39px;
+  }
+  
+  .benefits__item {
+    position: relative;
+    @include fonts($font, 800, 14px, 1.71);
+    letter-spacing: 0.08em;
+    color: $color-title;
+  
+    &:not(:last-child) {
+      margin-bottom: 61px;
+    }
+    
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 14px;
+      border-radius: 2px;
+      background-color: $color-accent;
+      left: 0px;
+      top:-30px;
+          }
+  
+    &::before {
+      display: inline-block;
+      position: absolute;
+      counter-increment: section;
+      content: '0' counters(section, '.') ' ';
+      @include fonts($font, 800, 14px, 1.21);
+      letter-spacing: 0.08em;
+      color: $color-accent;
+      left: 22px;
+      top:-37px;
+    }
+      /*вариант добавить линию в виде иконки
+
+      background-image: url(../images/marker-line.svg);
+      background-repeat:no-repeat;
+      width: 14px;
+      height: 2px;
+      padding-left: 30px;
+        }
+    */
+  }
