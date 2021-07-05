@@ -2,8 +2,9 @@
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
+  margin: 0 auto;
 }
-.guarantee-conteiner {
+.guarantee-container {
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
@@ -11,21 +12,6 @@
   width: 100%;
   height: 430px;
   background-color: #f1f1f1;
-  transform: translateY(-30px);
-}
-.guarantee-list-item {
-  display: flex;
-
-  width: 100%;
-  height: 75px;
-  border-left: 1px dashed #b9b9b9;
-  padding-inline-start: 28px;
-}
-.guarantee-list-item:not(:last-child) {
-  margin-bottom: 23px;
-}
-.guarantee-list-item:last-child {
-  margin-bottom: 31px;
 }
 .guarantee-title {
   font-family: Montserrat;
@@ -35,25 +21,46 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: ($color-title);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
+.guarantee-list-item {
+  display: flex;
+
+  width: 100%;
+  height: 75px;
+  border-left: 1px dashed #b9b9b9;
+  padding-inline-start: 28px;
+}
+
+.guarantee-list-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+.guarantee-list-item:last-child {
+  margin-bottom: 31px;
+  border: none;
+}
+
 .guarantee-list {
   padding-inline-start: 7px;
   transform: translateY(30px);
 }
 
 .guarantee-deskription {
+  position: relative;
   font-family: Montserrat;
   font-style: normal;
-  text-align: start;
+  text-align: left;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.66;
   color: ($color-text-alternative);
   height: 75px;
   flex-grow: 1;
+  transform: translateY(-30px);
 }
 .guarantee-deskription:before {
+  position: absolute;
+  left: -36px;
   content: '';
   background-image: url(../images/marker-fire.svg);
   background-size: cover;
@@ -63,11 +70,8 @@
 
   fill: ($color-accent);
   display: inline-block;
-  transform: translateX(-36px);
 }
-.guarantee-wrapper {
-  transform: translateY(-20px);
-}
+
 .guarantee-hightligt {
   color: ($color-accent);
 }
@@ -83,7 +87,6 @@
   .guarantee-deskription {
     line-height: 2.33;
     height: 38px;
-    text-align: left;
   }
 
   .guarantee-list-item {
@@ -103,7 +106,7 @@
     margin-bottom: 30px;
   }
   .guarantee-deskription:before {
-    transform: translateX(-40px);
+    left: -40px;
   }
 }
 
@@ -115,12 +118,11 @@
   .guarantee-conteiner {
     padding-left: 11.5px;
     padding-right: 11.5px;
-    min-width: 1343px;
     max-width: 100%;
   }
   .guarantee-title {
     font-size: 46px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   .guarantee-deskription {
     font-size: 20px;
@@ -131,6 +133,8 @@
     padding-right: 112px;
     width: 100%;
     height: 300px;
-    transform: translateY(-30px);
+  }
+  .guarantee-list-item:last-child {
+    margin-bottom: 45px;
   }
 }
