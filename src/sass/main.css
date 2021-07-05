@@ -156,7 +156,7 @@ ol {
 }
 
 .button.button-tablet.button--accent {
-  padding: 15px 5px;
+  padding: 13px 10px;
 }
 
 .header__button {
@@ -2844,7 +2844,7 @@ ol {
 .button {
   display: block;
   margin: 0 auto;
-  padding: 16px 36px;
+  padding: 14px 45px;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -2867,7 +2867,7 @@ ol {
 
 @media screen and (min-width: 1366px) {
   .button {
-    padding: 27px 70px;
+    padding: 25px 68px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -2884,6 +2884,7 @@ ol {
 .button.button--accent {
   display: block;
   background-color: transparent;
+  padding: 12px 34px;
   color: #ff6b09;
   border: 2px solid #ff6b09;
   -webkit-transition-property: color, background-color;
@@ -2896,7 +2897,7 @@ ol {
 
 @media screen and (min-width: 1366px) {
   .button.button--accent {
-    padding: 27px 24px;
+    padding: 25px 48px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 14px;
