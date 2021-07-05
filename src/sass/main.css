@@ -1,3 +1,5 @@
+
+
 @charset "UTF-8";
 body {
   margin: 0;
@@ -38,6 +40,13 @@ ol {
 }
 
 @media screen and (min-width: 768px) {
+
+  .reviews__header {
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 26px;
+
   .block-header-hero {
     background-image: url(../images/hero/bg-hero-tablet.png);
     background-repeat: no-repeat;
@@ -49,15 +58,57 @@ ol {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .block-header-hero {
     background-image: url(../images/hero/bg-hero-tablet@2x.png);
+
   }
 }
 
 @media screen and (min-width: 1366px) {
+
+  .reviews__header {
+    width: 866px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 46px;
+
   .block-header-hero {
     background-image: url(../images/hero/bg-hero-desktop.png);
     background-repeat: no-repeat;
+
   }
 }
+
+
+
+.reviews__container {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__container {
+    text-align: left;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.reviews__list {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
 
 @media screen and (min-width: 1366px) and (min-device-pixel-ratio: 2), screen and (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1366px) and (min-resolution: 192dpi), screen and (min-width: 1366px) and (min-resolution: 2dppx) {
   .block-header-hero {
@@ -76,6 +127,7 @@ ol {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 @media screen and (min-width: 480px) {
@@ -101,6 +153,36 @@ ol {
 .header {
   position: relative;
 }
+  .guarantee-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.guarantee-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 430px;
+  background-color: #f1f1f1;
+}
+
+.guarantee-title {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #111518;
+  margin-bottom: 30px;
+
 
 .container.header__container {
   padding-top: 30px;
@@ -144,17 +226,78 @@ ol {
   }
 }
 
-.button-thumb.button-thumb--tablet {
+
+
+
+.guarantee-list-item:last-child {
+  margin-bottom: 31px;
+  border: none;
+  }
+
+.reviews__container-graduate-story {
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+          box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__container-graduate-story {
+    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    width: 688px;
+
+
+.button-thumb.button-thumb-tablet {
+
   display: none;
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .button-thumb.button-thumb--tablet {
     display: block;
     margin-right: 40px;
+
   }
 }
 
+
+.guarantee-deskription {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #3d3d3d;
+  height: 75px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.guarantee-deskription:before {
+  position: absolute;
+  left: -36px;
+  content: '';
+  background-image: url(../images/marker-fire.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 14.7px;
+  fill: #ff6b09;
+  display: inline-block;
+    }
 .button.button-tablet.button--accent {
   padding: 13px 10px;
 }
@@ -180,9 +323,17 @@ ol {
 }
 
 @media screen and (min-width: 1366px) {
+
+
+  .reviews__container-graduate-story {
+    width: 1090px;
+    margin-bottom: 40px;
+
+
   .header__button {
     display: none;
   }
+
 }
 
 .header__button.header__button--closening {
@@ -198,6 +349,11 @@ ol {
     top: 47px;
     right: 40px;
   }
+
+  .guarantee-deskription {
+    line-height: 2.33;
+    height: 38px;
+
 }
 
 .header__icon {
@@ -237,8 +393,10 @@ ol {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: auto;
+
     -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   }
   .header__mobile-thumb.is-open {
     opacity: 1;
@@ -312,6 +470,10 @@ ol {
             align-items: center;
     margin: 0;
   }
+
+  .guarantee-deskription:before {
+    left: -40px;
+
 }
 
 .site-nav__item {
@@ -338,7 +500,9 @@ ol {
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0;
+
     margin-right: 65px;
+
   }
 }
 
@@ -415,6 +579,16 @@ ol {
   .site-nav__link {
     color: #b9b9b9;
   }
+
+  .guarantee-conteiner {
+    padding-left: 11.5px;
+    padding-right: 11.5px;
+    max-width: 100%;
+  }
+  .guarantee-title {
+    font-size: 46px;
+    margin-bottom: 50px;
+
 }
 
 .site-nav__link:hover,
@@ -445,6 +619,7 @@ ol {
   }
   .hero .section-title {
     margin-bottom: 95px;
+
   }
 }
 
@@ -452,6 +627,16 @@ ol {
   .section-title {
     font-size: 58px;
   }
+
+  .guarantee-conteiner {
+    padding-left: 112px;
+    padding-right: 112px;
+    width: 100%;
+    height: 300px;
+  }
+  .guarantee-list-item:last-child {
+    margin-bottom: 45px;
+
 }
 
 .hero .container {
@@ -477,6 +662,7 @@ ol {
 @media screen and (min-width: 1366px) {
   .hero .container {
     padding-bottom: 60px;
+
   }
 }
 
