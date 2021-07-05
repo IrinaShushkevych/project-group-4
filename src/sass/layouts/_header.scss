@@ -164,7 +164,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 60px 0 144px;
+    // margin: 0 60px 0 144px;
+    margin: 0;
   }
 }
 
@@ -180,9 +181,10 @@
     @include fonts($font, 800, 14px, 1.21);
     letter-spacing: 0;
 
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
+    margin-right: 65px;
+    // &:not(:last-child) {
+    //   margin-right: 40px;
+    // }
   }
 }
 // Анимация модального окна
