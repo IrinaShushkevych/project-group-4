@@ -1,8 +1,13 @@
+  .benefits {
+    position: absolute;
+    bottom:-150px;
+  }
+
   .benefits__title {
     @include fonts($font, 800, 24px);
     line-height: 130%;
     letter-spacing: 0.03em;
-    color: $color-accent;
+    color: $color-text-accent;
     height: 80px;
     max-width: 220px;
   
