@@ -1,17 +1,16 @@
-.problems__wrapper {
+.problems {
   background-image: linear-gradient(to bottom, $color-title 75%, $color-text-accent 75% 100%);
 }
-.problems {
-  // background-image: linear-gradient(to bottom, $color-title 75%, $color-text-accent 75% 100%);
+.problems__wrapper {
   padding-top: 27px;
   padding-bottom: 50px;
 
   @media screen and (min-width: 1366px) {
     background-image: url(../images/fire.svg);
-    background-position: right bottom 140px;
+    background-size: 400px 400px;
+    background-position: right bottom 130px;
     background-repeat: no-repeat;
-    width: 399px;
-    height: 445px;
+    padding-top: 102px;
   }
 }
 .problems__title {
@@ -38,7 +37,7 @@
     padding: 60px 45px 10px 96px;
   }
   @media screen and (min-width: 1366px) {
-    padding: 98px 112px 60px 114px;
+    padding: 98px 30px 60px 114px;
   }
 }
 
@@ -80,6 +79,6 @@
     flex-basis: calc((100% - 20px) / 2);
   }
   @media screen and (min-width: 1366px) {
-    flex-basis: calc((100% - 30px) / 3);
+    flex-basis: calc((100% - 120px) / 3);
   }
 }

@@ -37,15 +37,8 @@
   padding-bottom: 20px;
 }
 
-.footer-tell__icon {
-  // color: $color-accent;
-  // fill: $color-accent;
-
-}
-
 .footer-list {
   padding-bottom: 30px;
-
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -53,9 +46,7 @@
     padding-bottom: 0;
     // text-align: right;
   }
-
 }
-
 
 .footer-tel__link {
   font-style: normal;
@@ -91,7 +82,6 @@
     // margin: 0;
   }
 }
-
 
 .footer-down__copyright {
   padding: 20px 20px;
