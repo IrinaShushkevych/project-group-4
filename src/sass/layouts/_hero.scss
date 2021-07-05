@@ -29,7 +29,7 @@
   }
 
   @media screen and (min-width: 1366px) {
-    width: 1400px;
+    // width: 1400px;
     padding-left: 20px;
     // padding-right: 20px;
     padding-bottom: 60px;
@@ -96,7 +96,8 @@
 
   @media screen and (min-width: 1366px) {
     margin-bottom: 64px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
