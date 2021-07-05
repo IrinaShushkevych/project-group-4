@@ -87,8 +87,17 @@
   width: 100%;
 }
 
+.hero__block-button {
+  @media screen and (min-width: 1366px) {
+    text-align: center;
+  }
+}
+
 .hero .button {
   margin-bottom: 30px;
+  text-decoration: none;
+  display: inline-block;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     margin-left: 0;

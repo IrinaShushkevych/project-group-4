@@ -85,6 +85,9 @@
   &:focus {
     color: $color-accent;
   }
+  @media screen and (min-width: 1366px) {
+    display: block;
+  }
 }
 
 .modal-contacts {
