@@ -14,6 +14,7 @@
 @media screen and (min-width: 768px) {
   .reviews__header {
     width: 375px;
+    margin: 0 auto;
     margin-bottom: 30px;
     font-size: 26px;
   }
@@ -22,6 +23,7 @@
 @media screen and (min-width: 1366px) {
   .reviews__header {
     width: 866px;
+    margin: 0 auto;
     margin-bottom: 50px;
     font-size: 46px;
   }
@@ -38,6 +40,7 @@
   text-align: center;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,11 +95,13 @@
     padding: 0px;
     margin: 0 auto;
     margin-bottom: 30px;
+    width: 688px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .reviews__container-graduate-story {
+    width: 1090px;
     margin-bottom: 40px;
   }
 }
