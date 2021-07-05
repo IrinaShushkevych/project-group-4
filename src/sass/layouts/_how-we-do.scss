@@ -167,19 +167,25 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .how-we__list__item {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
   .wrapper {
     width: 70%;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) {
-  .how-we__list__item:nth-child(2n-1) {
-    margin-right: 30px;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .how-we__list__item:nth-child(2n-1) {
+//     margin-right: 20px;
+//   }
+// }
 @media screen and (min-width: 768px) {
   .how-we__list {
     margin-bottom: calc(-1 * 30px);
+    margin-right: -20px;
   }
 }
 // 1200++++>>>>>
@@ -189,16 +195,21 @@
     flex-basis: calc(100% / 3 - 20px);
   }
 }
+// @media screen and (min-width: 1366px) {
+//   .how-we__list__item:nth-child(2n-1) {
+//     margin-right: 0;
+//   }
+// }
 @media screen and (min-width: 1366px) {
-  .how-we__list__item:nth-child(2n-1) {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .how-we__list__item:not(:nth-child(3n)) {
+  .how-we__list__item {
     margin-right: 20px;
   }
 }
+// @media screen and (min-width: 1366px) {
+//   .how-we__list__item:not(:nth-child(3n)) {
+//     margin-right: 30px;
+//   }
+// }
 @media screen and (min-width: 1366px) {
   .how-we__title {
     font-size: 46px;
