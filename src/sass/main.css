@@ -40,6 +40,13 @@ ol {
 }
 
 @media screen and (min-width: 768px) {
+
+  .reviews__header {
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 26px;
+
   .block-header-hero {
     background-image: url(../images/hero/bg-hero-tablet.png);
     background-repeat: no-repeat;
@@ -51,13 +58,22 @@ ol {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .block-header-hero {
     background-image: url(../images/hero/bg-hero-tablet@2x.png);
+
   }
 }
 
 @media screen and (min-width: 1366px) {
+
+  .reviews__header {
+    width: 866px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 46px;
+
   .block-header-hero {
     background-image: url(../images/hero/bg-hero-desktop.png);
     background-repeat: no-repeat;
+
   }
 }
 
@@ -73,6 +89,7 @@ ol {
   text-align: center;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -231,6 +248,9 @@ ol {
     margin: 0 auto;
     margin-bottom: 30px;
 
+    width: 688px;
+
+
 .button-thumb.button-thumb-tablet {
   display: none;
 
@@ -240,6 +260,7 @@ ol {
   .button-thumb.button-thumb-tablet {
     display: block;
     margin-right: 40px;
+
 
   }
 }
@@ -295,6 +316,7 @@ ol {
 @media screen and (min-width: 1366px) {
 
   .reviews__container-graduate-story {
+    width: 1090px;
     margin-bottom: 40px;
 
   .header__button {
