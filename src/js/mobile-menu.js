@@ -15,7 +15,7 @@
 
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
-  const menuBtnRefClose = document.querySelector('[data-menu-button-close]');
+  const menuBtnRefClose = document.querySelectorAll('[data-menu-button-close]');
   const mobileMenuRef = document.querySelector('[data-menu]');
 
   const functionButton = () => {
@@ -23,5 +23,5 @@
   };
 
   menuBtnRef.addEventListener('click', functionButton);
-  menuBtnRefClose.addEventListener('click', functionButton);
+  menuBtnRefClose.forEach(btn => { btn.addEventListener('click', functionButton) });
 })();
