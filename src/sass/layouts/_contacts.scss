@@ -8,6 +8,19 @@
   background-size: cover;
   text-align: center;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 66px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-left: 295px;
+    padding-right: 295px;
+  }
+
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -54,6 +67,16 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 24px;
   text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 53px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
 }
 
 .title-contacts__accent {
@@ -69,10 +92,28 @@
   line-height: 15px;
   letter-spacing: 0.08em;
   margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 23px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 56px;
+  }
 }
 
 .text-contacts__accent {
   color: $color-accent;
+}
+
+.field-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input-contacts {
@@ -88,6 +129,17 @@
   background: transparent;
   color: $color-text-accent;
   border: 1px solid rgba(255, 255, 255, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 390px;
+    padding: 16px 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 478px;
+    height: 70px;
+    padding: 23px 40px;
+  }
 }
 
 ::placeholder {
@@ -96,8 +148,16 @@
 
 .form-contacts {
   margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
 }
 
 .contacts input[type='text'] {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
