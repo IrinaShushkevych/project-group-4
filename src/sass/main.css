@@ -1600,6 +1600,7 @@ ol {
   .benefits {
     -webkit-transform: translate(-50%, 48%);
             transform: translate(-50%, 48%);
+    max-width: 100%;
   }
 }
 
