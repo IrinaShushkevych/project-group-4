@@ -1581,19 +1581,16 @@ ol {
 
 .benefits {
   position: absolute;
-  bottom: -150px;
-  margin: auto;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 23%);
+          transform: translate(-50%, 23%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
   .benefits {
-    bottom: -290px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .benefits {
-    bottom: -150px;
+    -webkit-transform: translate(-50%, 23%);
+            transform: translate(-50%, 23%);
   }
 }
 
@@ -2044,6 +2041,9 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+
+  background-color: #E5E5E5;
+
   padding: 0 20px;
   margin: 0 auto;
 }

@@ -1,13 +1,17 @@
   .benefits {
     position: absolute;
-    bottom:-150px;
-    margin: auto;
-
-  @media screen and (min-width: 768px) {
-    bottom:-290px;
+    bottom: 0;
+    left:50%;
+    transform:translate(-50%, 23%);
+    
+  @media screen and (max-width: 479px) {
+    transform:translate(-50%, 48%);
+        }
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    transform:translate(-50%, 58%);
   }
   @media screen and (min-width: 1366px) {
-    bottom:-150px;
+    transform:translate(-50%, 39%);
   }
   }
 
@@ -23,7 +27,13 @@
       color: $color-accent;
     }
 
-  @media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
+    @include fonts($font, 800, 18px);
+    line-height: 120%;
+    max-width: 125px;
+                }
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
     text-align: center;
     height: 60px;
     max-width: 1365px;

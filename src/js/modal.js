@@ -1,4 +1,5 @@
 (() => {
+  const body = document.querySelector('body');
   const menuBtnRef = document.querySelectorAll('[data-certificate-button]');
   const BtnRef = document.querySelectorAll('[data-order-button]');
   const btnContact = document.querySelectorAll('[data-contact-button]');
@@ -7,7 +8,9 @@
   const modalOrder = document.querySelectorAll('[data-order]');
   const modalContact = document.querySelectorAll('[data-contact]');
 
-  const functionButtonCert = () => {
+  const functionButtonCert = e => {
+    e.preventDefault();
+    body.classList.toggle('lock');
     mobileMenuRef.forEach(elem => {
       elem.classList.toggle('is-hidden');
     });
@@ -18,6 +21,7 @@
   };
 
   const functionButtonOrder = () => {
+    body.classList.toggle('lock');
     mobileMenuRef.forEach(elem => {
       elem.classList.toggle('is-hidden');
     });
@@ -28,6 +32,7 @@
   };
 
   const functionButtonContact = () => {
+    body.classList.toggle('lock');
     mobileMenuRef.forEach(elem => {
       elem.classList.toggle('is-hidden');
     });
