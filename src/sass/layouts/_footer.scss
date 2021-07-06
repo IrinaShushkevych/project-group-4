@@ -2,17 +2,16 @@
   padding-top: 30px;
   padding-bottom: 0;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
-.footer__container {
+.footer-block__desktop {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -21,53 +20,70 @@
 
   @media screen and (min-width: 768px) {
     text-align: left;
-    margin-right: 204px;
+    // margin-right: 50px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    // margin-right: 40px;
   }
 }
 
 .footer-tell__icon {
   fill: $color-accent;
-  width: 30px;
-  height: 29px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
   fill: $color-accent;
-}
 
-.footer .logo--primary {
-  padding-bottom: 20px;
-}
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
 
-.footer-tell__icon {
-  // color: $color-accent;
-  // fill: $color-accent;
-
+  @media screen and (min-width: 1366px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .footer-list {
   padding-bottom: 30px;
-
+  align-items: center;
 
   @media screen and (min-width: 768px) {
+    margin-left: auto;
     display: flex;
     flex-direction: row;
     padding-bottom: 0;
-    // text-align: right;
+    text-align: right;
+    align-items: center;
+    height: 40px;
   }
 
+  @media screen and (min-width: 1366px) {
+    margin-left: 270px;
+  }
 }
-
 
 .footer-tel__link {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
-  line-height: 17.07px;
-
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.08em;
   font-size: 14px;
   color: $color-title;
 
   @media screen and (min-width: 768px) {
     margin-right: 24px;
     font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
   }
 }
 
@@ -77,6 +93,11 @@
   height: 40px;
   display: block;
   background-image: url(.././images/instagram.svg);
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 24px;
+  }
 }
 
 .footer-item:first-child {
@@ -85,28 +106,29 @@
 
 .footer-item:not(:last-child) {
   @media screen and (min-width: 768px) {
+    height: fit-content;
     border-right: 1px solid $color-title;
     margin-left: 24px;
     margin-right: 24px;
-    // margin: 0;
+    margin: 0;
   }
 }
 
-
-.footer-down__copyright {
+.footer_container--black {
   padding: 20px 20px;
-  background-color: $color-title;
 
   @media screen and (min-width: 768px) {
+    text-align: left;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1366px) {
   }
 }
 
 .copyright {
-  font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 28px;
   color: $color-text;
@@ -114,10 +136,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 0;
-    margin-right: 40px;
     text-align: left;
-    // text-align: left;
-    // margin-left: 40px;
-    // width: 768px;
+    text-align: left;
+    margin-left: 20px;
+    width: 768px;
   }
+}
+
+.copyright-black {
+  background-color: $color-title;
 }
