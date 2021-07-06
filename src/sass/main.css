@@ -2405,8 +2405,6 @@ ol {
 @media screen and (min-width: 768px) {
   .contacts__overlay {
     padding-top: 66px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-bottom: 62px;
   }
 }
@@ -2414,8 +2412,6 @@ ol {
 @media screen and (min-width: 1200px) {
   .contacts__overlay {
     padding-top: 100px;
-    padding-left: 295px;
-    padding-right: 295px;
   }
 }
 
@@ -2535,6 +2531,7 @@ ol {
   height: 48px;
   padding: 15px 48px;
   background: transparent;
+  outline: none;
   color: #ffffff;
   border: 1px solid white;
 }
@@ -2597,15 +2594,18 @@ ol {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__container {
+  .footer {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-block__desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -2616,20 +2616,22 @@ ol {
 @media screen and (min-width: 768px) {
   .footer .footer-logo {
     text-align: left;
-    margin-right: 204px;
+    margin-right: 190px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .footer-logo {
+    margin-right: 0 auto;
   }
 }
 
 .footer-tell__icon {
   fill: #ff6b09;
-  width: 30px;
-  height: 29px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
   fill: #ff6b09;
-}
-
-.footer .logo--primary {
-  padding-bottom: 20px;
 }
 
 .footer-list {
@@ -2646,13 +2648,16 @@ ol {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-bottom: 0;
+    text-align: right;
   }
 }
 
 .footer-tel__link {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
-  line-height: 17.07px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.08em;
   font-size: 14px;
   color: #111518;
 }
@@ -2661,6 +2666,15 @@ ol {
   .footer-tel__link {
     margin-right: 24px;
     font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-tel__link {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
   }
 }
 
@@ -2670,6 +2684,13 @@ ol {
   height: 40px;
   display: block;
   background-image: url(.././images/instagram.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-link_inst {
+    margin-left: 24px;
+  }
 }
 
 .footer-item:first-child {
@@ -2678,20 +2699,32 @@ ol {
 
 @media screen and (min-width: 768px) {
   .footer-item:not(:last-child) {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-right: 1px solid #111518;
     margin-left: 24px;
     margin-right: 24px;
+    margin: 0;
   }
 }
 
 .footer-down__copyright {
   padding: 20px 20px;
   background-color: #111518;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-down__copyright {
+    text-align: left;
+  }
 }
 
 .copyright {
-  font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 28px;
   color: #b9b9b9;
@@ -2705,6 +2738,9 @@ ol {
     margin-bottom: 0;
     margin-right: 40px;
     text-align: left;
+    text-align: left;
+    margin-left: 40px;
+    width: 768px;
   }
 }
 
