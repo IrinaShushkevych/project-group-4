@@ -158,3 +158,11 @@
     margin-bottom: 30px;
   }
 }
+
+// input:valid {
+//   background-color: transparent;
+// }
+
+input:invalid {
+  border-color: red;
+}
