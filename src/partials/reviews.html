@@ -20,12 +20,24 @@
                     <use href="./images/icons.svg#vk"></use>
                 </svg>
     </div>
-                <div class="reviews__graduate-card">
+                <article class="reviews__graduate-card">
+
             <h3 class="reviews__graduate-title">Tonya Kucherovskaya</h3>
             <p class="reviews__graduate-description-first">Graduated from 2015, National University of Bioresources
             and natural history of Ukraine</p> 
-            <p class="reviews__graduate-description-second">In a short time with Elena, I mastered grammar and replenished my completely empty vocabulary. From the first lesson I realized that I was on my plate. Elena and I became friends because she was really worried about my success. She became an authority for me, but I did not tremble in class, fearing to make the slightest mistake. Now I can brag that I'm student ... <a href="" class="link reviews__graduate-description-link">Read more</a></p>
-    </div></li></ul></div>
+            <p class="reviews__graduate-description-second">In a short time with Elena, 
+                I mastered grammar and replenished my completely empty vocabulary. 
+                From the first lesson I realized that I was on my plate. Elena and
+                 I became friends because she was really worried about my success. 
+                 She became an authority for me, but I did not tremble in class, 
+                 fearing to make the slightest mistake. Now I can brag that I'm student<span id="dots">...</span><span id="more">In a short time with Elena, 
+                    I mastered grammar and replenished my completely empty vocabulary. 
+                    From the first lesson I realized that I was on my plate. Elena and
+                     I became friends because she was really worried about my success. 
+                     She became an authority for me, but I did not tremble in class, 
+                     fearing to make the slightest mistake. Now I can brag that I'm student</span><button onclick="myFunction()" id="myBtn" class="reviews__graduate-read-more"> Read more</button></p>
+                  
+            </article></li></ul></div>
             <div class="reviews__slider">
             <ul class="list reviews__slider-list">
                 
@@ -36,13 +48,7 @@
                 </svg>
             </li>
     
-                <!-- <li class="reviews__slider-item">
-                <picture class="reviews__slider-picture">
-                    <source srcset="./images/reviews/graduate1-small.webp 1x, ./images/reviews/graduate1-small@2x.webp 2x" media="(min-width:290px)" type="image/webp">
-                    <source srcset="./images/reviews/graduate1-small.png 1x, ./images/reviews/graduate1-small@2x.png 2x" media="(min-width:290px)">
-    
-                <img src="./images/reviews/graduate1-small.png" class="reviews__slider-photo" alt="Graduate1"/></picture>
-            </li> -->
+            
             <li class="reviews__slider-item">
                 <picture class="reviews__slider-picture">
                     <source srcset="./images/reviews/graduate2-small.webp 1x, ./images/reviews/graduate2-small@2x.webp 2x" media="(min-width:290px)" type="image/webp">
@@ -80,6 +86,13 @@
                     <source srcset="./images/reviews/graduate7-small.png 1x, ./images/reviews/graduate7-small@2x.png 2x" media="(min-width:290px)">
                 <img src="./images/reviews/graduate7-small.png" class="reviews__slider-photo" alt="Graduate7"/></picture>
             </li>
+                <li class="reviews__slider-item">
+                <picture class="reviews__slider-picture">
+                    <source srcset="./images/reviews/graduate1-small.webp 1x, ./images/reviews/graduate1-small@2x.webp 2x" media="(min-width:290px)" type="image/webp">
+                    <source srcset="./images/reviews/graduate1-small.png 1x, ./images/reviews/graduate1-small@2x.png 2x" media="(min-width:290px)">
+    
+                <img src="./images/reviews/graduate1-small.png" class="reviews__slider-photo" alt="Graduate1"/></picture>
+            </li>
             <li class="reviews__slider-item">
                 <a href="" class="">
             <svg class="reviews__slider-icon-right">
@@ -88,3 +101,20 @@
     </li>
         </ul></div></div>
         </section>
+        <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "&nbspRead less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            </script>

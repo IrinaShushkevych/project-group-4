@@ -90,15 +90,24 @@ ol {
   text-align: center;
   padding: 0 20px;
   margin: 0 auto;
-  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .reviews__container {
+    width: 713px;
     text-align: left;
     position: relative;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .reviews__container {
+    width: 1258px;
+    padding-left: 54px;
+    padding-right: 54px;
+    position: relative;
   }
 }
 
@@ -251,6 +260,9 @@ ol {
 
     width: 688px;
 
+    position: relative;
+  }
+
 
 .button-thumb.button-thumb-tablet {
 
@@ -262,6 +274,7 @@ ol {
   .button-thumb.button-thumb--tablet {
     display: block;
     margin-right: 40px;
+
 
   }
 }
@@ -381,6 +394,15 @@ ol {
   fill: #ff6b09;
 }
 
+
+@media screen and (min-width: 768px) {
+  .reviews__icon-social-net {
+    margin: 0;
+    position: absolute;
+    top: 175px;
+    left: 60px;
+  }
+    }
 @media screen and (max-width: 1365px) {
   .header__mobile-thumb {
     position: fixed;
@@ -421,6 +443,7 @@ ol {
     -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
   }
 }
 
@@ -435,6 +458,22 @@ ol {
 
 }
 
+
+.reviews__graduate-card {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__graduate-card {
+    max-width: 412px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .reviews__graduate-card {
+    max-width: 706px;
+
 .site-nav.header__nav {
   padding: 50px 20px;
 }
@@ -448,6 +487,7 @@ ol {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+
   }
 }
 
@@ -2380,12 +2420,58 @@ ol {
   color: #3D3D3D;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 0;
-  height: 257px;
+  padding-bottom: 72px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .reviews__graduate-description-second {
+
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .reviews__graduate-description-second {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.reviews__graduate-read-more {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #FF6B09;
+  text-decoration: underline;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__graduate-read-more {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12;
+    line-height: 1.67;
+  }
+}
+
+#more {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__slider {
+    width: 558px;
+    margin: 0 auto;
+  }
+}
+
+.reviews__slider-list {
+
     height: 139px;
   }
 }
@@ -2609,6 +2695,7 @@ ol {
 }
 
 .field-contacts {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2643,6 +2730,18 @@ ol {
   }
 }
 
+
+.reviews__slider-item:nth-child(2) {
+  margin-right: 10px;
+}
+
+.reviews__slider-item:nth-child(3) {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__slider-item:nth-child(1) {
+  }}
 @media screen and (min-width: 1200px) {
   .input-contacts {
     width: 478px;
@@ -2756,6 +2855,7 @@ ol {
 
 @media screen and (min-width: 768px) {
   .footer-tel__link {
+
     margin-right: 24px;
     font-size: 20px;
   }
@@ -2893,6 +2993,9 @@ ol {
   .modal-contacts .header__button {
     display: block;
   }
+  .reviews__slider-item:nth-child(8) {
+    display: none;
+  }
 }
 
 .modal-contacts {
@@ -2985,12 +3088,24 @@ ol {
   color: #111518;
 }
 
+.reviews__slider-icon-right {
+  margin-left: 24px;
+}
+
 @media screen and (min-width: 768px) {
+
+  .reviews__slider-icon-left {
+    position: absolute;
+    top: 45%;
+    left: -1%;
+    cursor: pointer;
+
   .header__logo {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 26px;
     line-height: 1.23;
+
   }
 }
 
@@ -2999,6 +3114,13 @@ ol {
 }
 
 @media screen and (min-width: 768px) {
+
+  .reviews__slider-icon-right {
+    position: absolute;
+    top: 45%;
+    right: -1%;
+    cursor: pointer;
+
   .logo-thumb.logo-thumb--secondary {
     padding: 40px 0 0 40px;
   }
@@ -3007,6 +3129,7 @@ ol {
 @media screen and (min-width: 1366px) {
   .logo-thumb.logo-thumb--secondary {
     display: none;
+
   }
 }
 
