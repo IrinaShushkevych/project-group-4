@@ -1,31 +1,45 @@
 (() => {
+  const body = document.querySelector('body');
   const menuBtnRef = document.querySelectorAll('[data-certificate-button]');
   const BtnRef = document.querySelectorAll('[data-order-button]');
+  const btnContact = document.querySelectorAll('[data-contact-button]');
   const mobileMenuRef = document.querySelectorAll('[data-modal]');
-  const mobileCert = document.querySelectorAll('[data-certificate]');
-  const mobileOrder = document.querySelectorAll('[data-order]');
+  const modalCert = document.querySelectorAll('[data-certificate]');
+  const modalOrder = document.querySelectorAll('[data-order]');
+  const modalContact = document.querySelectorAll('[data-contact]');
 
-
-  const functionButtonCert = () => {
+  const functionButtonCert = e => {
+    e.preventDefault();
+    body.classList.toggle('lock');
     mobileMenuRef.forEach(elem => {
       elem.classList.toggle('is-hidden');
     });
 
-    mobileCert.forEach(elem => {
+    modalCert.forEach(elem => {
       elem.classList.toggle('is-open');
     });
-
   };
 
   const functionButtonOrder = () => {
+    body.classList.toggle('lock');
     mobileMenuRef.forEach(elem => {
       elem.classList.toggle('is-hidden');
     });
 
-    mobileOrder.forEach(elem => {
+    modalOrder.forEach(elem => {
       elem.classList.toggle('is-open');
     });
+  };
 
+  const functionButtonContact = () => {
+    body.classList.toggle('lock');
+    mobileMenuRef.forEach(elem => {
+      elem.classList.toggle('is-hidden');
+    });
+
+    modalContact.forEach(elem => {
+      elem.classList.toggle('is-open');
+    });
   };
 
   menuBtnRef.forEach(btn => {
@@ -36,4 +50,7 @@
     btn.addEventListener('click', functionButtonOrder);
   });
 
+  btnContact.forEach(btn => {
+    btn.addEventListener('click', functionButtonContact);
+  });
 })();
