@@ -3,10 +3,27 @@
     bottom: 0;
     left:50%;
     transform:translate(-50%, 23%);
-    
-  @media screen and (max-width: 479px) {
-    transform:translate(-50%, 48%);
-        }
+        
+  @media screen and (max-width: 343px) {
+    transform:translate(-50%, 32%);
+    max-width: 479px;
+    width: 100%;
+    }
+  @media screen and (min-width: 344px) and (max-width: 389px) {
+    transform:translate(-50%, 30%);
+    max-width: 479px;
+    width: 100%;
+    }
+  @media screen and (min-width: 390px) and (max-width: 391px) {
+    transform:translate(-50%, 27%);
+    max-width: 479px;
+    width: 100%;
+    }
+  @media screen and (min-width: 392px) and (max-width: 479px) {
+    transform:translate(-50%, 25%);
+    max-width: 479px;
+    width: 100%;
+  }
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     transform:translate(-50%, 58%);
   }
@@ -27,18 +44,29 @@
       color: $color-accent;
     }
 
-@media screen and (max-width: 479px) {
-    @include fonts($font, 800, 18px);
-    line-height: 120%;
-    max-width: 125px;
+  @media screen and (max-width: 343px) {
+    @include fonts($font, 800, 20px);
+    max-width: 200px;
+    width: 100%;
                 }
-
+  @media screen and (min-width: 344px) and (max-width: 389px) {
+    @include fonts($font, 800, 22px);
+    max-width: 200px;
+    width: 100%;
+            }
+  @media screen and (min-width: 390px) and (max-width: 391px) {
+    max-width: 300px;
+    width: 100%;
+            }
+  @media screen and (min-width: 392px) and (max-width: 479px) {
+    max-width: 300px;
+    width: 100%;
+                }
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     text-align: center;
     height: 60px;
     max-width: 1365px;
   }
-
   @media screen and (min-width: 1366px) {
     display: none;
   }
