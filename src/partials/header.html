@@ -1,0 +1,87 @@
+<header class="header">
+  <nav class="container header__container">
+    <div class="header__thumb">
+      <div class="logo-thumb">
+        <p class="header__logo">
+          Hell<img class="header__image" src="./images/logo-fire.svg" alt="logo fire" />EN
+        </p>
+        <p class="logo logo--primary"><span class="logo logo--accent"> HELLISH </span>english</p>
+      </div>
+
+      <div class="thumb-tablet">
+        <div class="button-thumb button-thumb--tablet">
+          <button type="button" class="button button-tablet button--accent" data-contact-button>Consultation by phone</button>
+        </div>
+
+        <button
+          type="button"
+          class="header__button header__button--opening"
+          aria-expanded="false"
+          aria-controls="header__mobile-thumb"
+          data-menu-button
+        >
+          <svg
+            class="header__icon header__icon--open"
+            width="32px"
+            height="32px"
+            aria-label="Открываем мобильное меню"
+          >
+            <use class="" href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="header__mobile-thumb" id="header__mobile-thumb" data-menu>
+      <div class="logo-thumb logo-thumb--secondary">
+        <p class="header__logo header__logo--secondary">
+          Hell<img
+            class="header__image header__image--secondary"
+            src="./images/logo-fire.svg"
+            alt="logo fire"
+            width="14"
+            height="19"
+          />EN
+        </p>
+        <p class="logo logo--secondary"><span class="logo logo--accent">HELLISH </span>english</p>
+      </div>
+      <div class="site-nav header__nav">
+        <button
+          type="button"
+          class="header__button header__button--closening"
+          aria-expanded="false"
+          aria-controls="header__mobile-thumb"
+          data-menu-button-close
+        >
+          <svg
+            class="header__icon header__icon--close"
+            width="15px"
+            height="15px"
+            aria-label="Закрываем мобильное меню"
+          >
+            <use class="" href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <div class="site-nav__thumb">
+          <ul class="site-nav__list">
+            <li class="site-nav__item item">
+              <a href="#program" class="link site-nav__link" data-menu-button-close>Studying program</a>
+            </li>
+            <li class="site-nav__item item">
+              <a href="#about" class="link site-nav__link" data-menu-button-close>About</a>
+            </li>
+            <li class="site-nav__item item">
+              <a href="#guarantee" class="link site-nav__link" data-menu-button-close>Training options</a>
+            </li>
+            <li class="site-nav__item item">
+              <a href="#contacts" class="link site-nav__link" data-menu-button-close>Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-thumb button-thumb--mobile">
+        <button type="button" class="button button--accent" data-menu-button-close data-contact-button>Consultation by phone</button>
+      </div>
+    </div>
+  </nav>
+</header>
