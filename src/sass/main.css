@@ -168,8 +168,7 @@ ol {
       flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
-  height: 430px;
+  padding-bottom: 30px;
   background-color: #f1f1f1;
 }
 
@@ -230,7 +229,6 @@ ol {
 
 
 .guarantee-list-item:last-child {
-  margin-bottom: 31px;
   border: none;
   }
 
@@ -282,8 +280,8 @@ ol {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 .guarantee-deskription:before {
@@ -345,9 +343,17 @@ ol {
 }
 
 @media screen and (min-width: 768px) {
+
+  .guarantee-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 50px;
+    padding-top: 30px;
+
   .header__button.header__button--closening {
     top: 47px;
     right: 40px;
+
   }
 
   .guarantee-deskription {
@@ -398,12 +404,23 @@ ol {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   }
+
+  .guarantee-list {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .guarantee-list-item {
+    height: 38px;
+    -webkit-padding-start: 32px;
+            padding-inline-start: 32px;
+
   .header__mobile-thumb.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
   }
 }
 
@@ -415,6 +432,7 @@ ol {
     opacity: 1;
     visibility: visible;
   }
+
 }
 
 .site-nav.header__nav {
@@ -470,6 +488,7 @@ ol {
             align-items: center;
     margin: 0;
   }
+
 
   .guarantee-deskription:before {
     left: -40px;
@@ -531,6 +550,14 @@ ol {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 350ms;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 350ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 350ms;
   }
+
+  .guarantee-container {
+    padding-left: 112px;
+    padding-right: 112px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    width: 100%;
+
   .header__mobile-thumb.is-open .button-thumb {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -584,6 +611,7 @@ ol {
     padding-left: 11.5px;
     padding-right: 11.5px;
     max-width: 100%;
+
   }
   .guarantee-title {
     font-size: 46px;
@@ -621,6 +649,7 @@ ol {
     margin-bottom: 95px;
 
   }
+
 }
 
 @media screen and (min-width: 1366px) {
@@ -664,6 +693,7 @@ ol {
     padding-bottom: 60px;
 
   }
+
 }
 
 .hero__text {
