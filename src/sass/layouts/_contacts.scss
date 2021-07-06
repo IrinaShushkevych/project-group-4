@@ -10,15 +10,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 66px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-bottom: 62px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 100px;
-    padding-left: 295px;
-    padding-right: 295px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -127,6 +123,7 @@
   height: 48px;
   padding: 15px 48px;
   background: transparent;
+  outline: none;
   color: $color-text-accent;
   border: 1px solid rgba(255, 255, 255, 1);
 
