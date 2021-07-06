@@ -10,8 +10,22 @@
     </p>
     <form class="form-contacts">
       <label class="field-contacts">
-        <input type="text" class="input-contacts" name="name" placeholder="Name*" pattern="" />
-        <input type="tel" class="input-contacts" name="tel" placeholder="Phone*" pattern="" />
+        <input
+          type="text"
+          class="input-contacts"
+          name="name"
+          placeholder="Name*"
+          pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]*?"
+          title="Ivan / Иван / Іван"
+        />
+        <input
+          type="tel"
+          class="input-contacts"
+          name="phone"
+          placeholder="Phone*"
+          pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+          title="+38(099)123-45-67 / +380991234567"
+        />
       </label>
     </form>
     <button class="button" data-certificate-button>I want a free lesson</button>
