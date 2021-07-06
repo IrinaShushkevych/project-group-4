@@ -1589,8 +1589,22 @@ ol {
 
 @media screen and (max-width: 479px) {
   .benefits {
-    -webkit-transform: translate(-50%, 23%);
-            transform: translate(-50%, 23%);
+    -webkit-transform: translate(-50%, 48%);
+            transform: translate(-50%, 48%);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .benefits {
+    -webkit-transform: translate(-50%, 58%);
+            transform: translate(-50%, 58%);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .benefits {
+    -webkit-transform: translate(-50%, 39%);
+            transform: translate(-50%, 39%);
   }
 }
 
@@ -1610,7 +1624,18 @@ ol {
   color: #ff6b09;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
+  .benefits__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.67;
+    line-height: 120%;
+    max-width: 125px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
   .benefits__title {
     text-align: center;
     height: 60px;
@@ -2041,9 +2066,6 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-
-  background-color: #E5E5E5;
-
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -2587,6 +2609,10 @@ ol {
   }
 }
 
+input:invalid {
+  border-color: red;
+}
+
 .footer {
   padding-top: 30px;
   padding-bottom: 0;
@@ -2616,13 +2642,6 @@ ol {
 @media screen and (min-width: 768px) {
   .footer .footer-logo {
     text-align: left;
-    margin-right: 190px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer .footer-logo {
-    margin-right: 0 auto;
   }
 }
 
@@ -2636,6 +2655,10 @@ ol {
 
 .footer-list {
   padding-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2709,14 +2732,12 @@ ol {
   }
 }
 
-.footer-down__copyright {
+.footer_container--black {
   padding: 20px 20px;
-  background-color: #111518;
-  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-down__copyright {
+  .footer_container--black {
     text-align: left;
   }
 }
@@ -2736,12 +2757,19 @@ ol {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 0;
-    margin-right: 40px;
     text-align: left;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 20px;
     width: 768px;
   }
+}
+
+.copyright-black {
+  background-color: #111518;
+}
+
+.lock {
+  overflow: hidden;
 }
 
 .backdrop {
