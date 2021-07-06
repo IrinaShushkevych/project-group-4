@@ -21,25 +21,30 @@
   padding-bottom: 36px;
 
   @media screen and (min-width: 768px) {
-    // width: 768px;
     @include flex;
-    // padding-left: 42px;
-    // padding-right: 18px;
     padding-bottom: 55px;
   }
 
   @media screen and (min-width: 1366px) {
-    // width: 1400px;
-    // padding-left: 20px;
-    // padding-right: 20px;
     padding-bottom: 60px;
   }
 }
 
+.hero__block-text {
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 1366px) {
+    width: 660px;
+  }
+}
+
 .hero__text {
+  display: block;
   @include fonts($font, 700, 14px, 1.57);
   color: $color-title;
   letter-spacing: 0.08em;
+  margin-left: 0;
 
   &--accent {
     color: $color-accent;
@@ -62,11 +67,17 @@
     line-height: 1.65;
     &--accent {
       margin-bottom: 30px;
+      margin-left: 5px;
+      color: $color-title;
+    }
+    &--inline {
+      display: inline-block;
     }
   }
 }
 
 .hero__block-img {
+  position: relative;
   width: 208px;
   height: 178px;
   margin: 0 auto;
@@ -84,7 +95,18 @@
 }
 
 .hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 376px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 842px;
+  }
 }
 
 .hero__block-button {
@@ -107,14 +129,5 @@
     margin-bottom: 64px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.hero__block-text {
-  @media screen and (min-width: 768px) {
-    width: 332px;
-  }
-  @media screen and (min-width: 1366px) {
-    width: 660px;
   }
 }
