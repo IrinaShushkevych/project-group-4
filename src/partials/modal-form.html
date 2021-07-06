@@ -41,7 +41,16 @@
       <div class="modal-form__block">
         <label class="modal-form__label" for="order-name">Name</label>
         <div class="modal-form__field">
-          <input class="modal-form__input" type="text" name="order-name" id="order-name" required />
+          <input
+            class="modal-form__input"
+            type="text"
+            name="order-name"
+            id="order-name"
+            required
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]*?"
+            title="Ivan / Иван / Іван"
+            placeholder="Name*"
+          />
           <svg class="modal-form__icon">
             <use href="./images/icons.svg#icon-form-person"></use>
           </svg>
@@ -57,8 +66,8 @@
             id="order-phone"
             required
             pattern="\+8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-            placeholder="+8(___)___-__-__"
-            title="+38(099)123-45-67"
+            placeholder="Phone*"
+            title="+8(099)123-45-67"
           />
           <svg class="modal-form__icon">
             <use href="./images/icons.svg#icon-form-phone"></use>
