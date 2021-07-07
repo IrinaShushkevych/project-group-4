@@ -1,6 +1,9 @@
 @import './common/variables';
 @import './common/mixin';
-
+@import './common/visually-hidden';
+@import './common/utilits';
+@import './components/blocks';
+@import './layouts/_container';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/advantages';
@@ -14,3 +17,6 @@
 @import './layouts/contacts';
 @import './layouts/footer';
 @import './components/modal-form';
+
+@import './components/logo';
+@import './components/button';
