@@ -24,7 +24,7 @@
 
     .container {
       width: 1366px;
-      padding: 0 23px;
+      padding: 0 26px;
     }
   }
 }
@@ -75,6 +75,7 @@
 
   @media screen and (min-width: 1366px) {
     display: none;
+    left: 50%;
   }
 }
 
