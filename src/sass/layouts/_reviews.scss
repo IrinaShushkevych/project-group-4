@@ -27,7 +27,7 @@
     }
   }
   
-
+ 
   .reviews__container {
     display: block;
     align-items: center;
@@ -38,6 +38,7 @@
     margin: 0 auto;
  margin-top: 50px;
     margin-bottom: 50px;
+
   }
   
  
@@ -515,7 +516,7 @@
   }
   .reviews__slider-icon-right {
     margin-left: 24px;
-  
+  }
   @media screen and (min-width: 768px) {
     .reviews__slider-icon-left {
       position: absolute;
@@ -610,4 +611,3 @@
       margin-right: 30px;
     }
   }
-
