@@ -1,0 +1,201 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 0;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+}
+
+.footer-block__desktop {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer .footer-logo {
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    // margin-right: 50px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    // margin-right: 40px;
+  }
+}
+
+.footer-tell__icon {
+  fill: $color-accent;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: $color-accent;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer-list {
+  padding-bottom: 30px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    text-align: right;
+    align-items: center;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    margin-left: 290px;
+  }
+}
+
+.footer-tel__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  color: $color-title;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+  }
+}
+
+.footer-link_inst {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  // background-image: url(../images/instagram.svg),
+  //   linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
+  //   linear-gradient(
+  //     225.4deg,
+  //     #833ab4 18.3%,
+  //     #9c3495 24.28%,
+  //     #dc2546 37.27%,
+  //     #fd1d1d 43.71%,
+  //     #fc6831 54.52%,
+  //     #fc9b40 62.93%,
+  //     #fcaf45 67.04%,
+  //     #fdb750 68.89%,
+  //     #fecb6a 74.4%,
+  //     #ffd87a 79.32%,
+  //     #ffdc80 83.11%
+  //   ),
+  //   linear-gradient(318.52deg, rgba(131, 58, 180, 0) 64.74%, #833ab4 106.74%),
+  //   linear-gradient(315deg, rgba(131, 58, 180, 0) 39.5%, #833ab4 115.97%),
+  //   linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
+  //   linear-gradient(314.85deg, rgba(131, 58, 180, 0) 68.66%, #833ab4 99.14%),
+  //   linear-gradient(
+  //     180deg,
+  //     rgba(250, 225, 0, 0) 41.26%,
+  //     rgba(252, 168, 0, 0.305882) 65.21%,
+  //     rgba(254, 115, 0, 0.627451) 90.26%,
+  //     rgba(255, 82, 0, 0.866667) 109.08%,
+  //     #ff4500 119.35%
+  //   ),
+  //   linear-gradient(
+  //     299.36deg,
+  //     rgba(161, 181, 216, 0) 61.06%,
+  //     rgba(144, 162, 189, 0.309804) 110.82%,
+  //     rgba(124, 139, 156, 0.756863) 182.56%,
+  //     #748290 221.9%
+  //   ),
+  //   radial-gradient(
+  //     110.28% 110.28% at 20.5% 87.39%,
+  //     #fae100 0%,
+  //     #fadc04 5.44%,
+  //     #fbce0e 11.67%,
+  //     #fcb720 18.29%,
+  //     #fe9838 25.14%,
+  //     #ff7950 30.54%,
+  //     #ff1c74 49.22%,
+  //     #6c1cd1 100%
+  //   );
+
+  background-image: url(../images/instagram-1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 24px;
+  }
+}
+
+.footer-item:first-child {
+  margin-bottom: 30px;
+}
+
+.footer-item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    height: fit-content;
+    border-right: 1px solid $color-title;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin: 0;
+  }
+}
+
+.footer_container--black {
+  // padding: 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1366px) {
+  }
+}
+
+.copyright {
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: $color-text;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 0;
+    text-align: left;
+    text-align: left;
+    // margin-left: 20px;
+    width: 768px;
+  }
+}
+
+.copyright-black {
+  background-color: $color-title;
+}
