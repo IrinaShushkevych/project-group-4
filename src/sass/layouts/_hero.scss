@@ -2,10 +2,10 @@
   @include fonts($font, 800, 20px, 1.3);
   .hero & {
     margin-bottom: 55px;
-    transform: translateY(120%);
-    opacity: 0;
-    transition: transform $duration $timing-function $delay,
-      opacity $duration $timing-function $delay;
+    // transform: translateY(120%);
+    // opacity: 0;
+    // transition: transform $duration $timing-function $delay,
+    //   opacity $duration $timing-function $delay;
   }
 
   .hero.active-anim & {
@@ -56,10 +56,10 @@
   margin-left: 0;
 
   &--primary {
-    transform: translateY(200%);
-    opacity: 0;
-    transition: transform $duration $timing-function $delay,
-      opacity $duration $timing-function $delay * 3;
+    // transform: translateY(200%);
+    // opacity: 0;
+    // transition: transform $duration $timing-function $delay,
+    //   opacity $duration $timing-function $delay * 3;
     .hero.active-anim & {
       transform: translateY(0);
       opacity: 1;
@@ -69,10 +69,10 @@
   &--accent {
     color: $color-accent;
     margin-bottom: 30px;
-    transform: translateY(200%);
-    opacity: 0;
-    transition: transform $duration $timing-function $delay,
-      opacity $duration $timing-function $delay * 4;
+    // transform: translateY(200%);
+    // opacity: 0;
+    // transition: transform $duration $timing-function $delay,
+    //   opacity $duration $timing-function $delay * 4;
     .hero.active-anim & {
       transform: translateY(0);
       opacity: 1;
@@ -82,10 +82,10 @@
   &--alternative {
     color: $color-text;
     font-weight: 500;
-    transform: translateY(200%);
-    opacity: 0;
-    transition: transform $duration $timing-function $delay,
-      opacity $duration $timing-function $delay * 2;
+    // transform: translateY(200%);
+    // opacity: 0;
+    // transition: transform $duration $timing-function $delay,
+    //   opacity $duration $timing-function $delay * 2;
     .hero.active-anim & {
       transform: translateY(0);
       opacity: 1;
@@ -136,8 +136,8 @@
   left: 0;
   width: 100%;
 
-  transform: scale(0);
-  transition: transform $duration $timing-function $delay;
+  // transform: scale(0);
+  // transition: transform $duration $timing-function $delay;
 
   .hero.active-anim & {
     transform: scale(1);
@@ -157,8 +157,8 @@
   text-decoration: none;
   display: inline-block;
 
-  transform: scale(0);
-  transition: transform $duration $timing-function $delay * 5;
+  // transform: scale(0);
+  // transition: transform $duration $timing-function $delay * 5;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
