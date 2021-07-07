@@ -27,19 +27,20 @@
           pageYOffset < animItemOffSet + animItemHeight
         ) {
           animItem.classList.add('active-anim');
-          console.log('add');
+          // console.log('add');
+          // console.log(animItem);
         } else {
           if (!animItem.classList.contains('anim-no-hide')) {
             animItem.classList.remove('active-anim');
-            console.log('remove');
+            // console.log('remove');
           }
         }
       }
     }
 
-    setTimeout(() => {
-      animOnScroll();
-    }, 300);
+    // setTimeout(() => {
+    //   animOnScroll();
+    // }, 300);
 
     window.addEventListener('scroll', animOnScroll);
     animOnScroll();

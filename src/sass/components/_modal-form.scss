@@ -8,9 +8,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-
-  overflow-y: scroll;
   padding: 0 20px;
+  overflow: hidden;
   background-color: $bg-overlay;
   transition: opacity $duration $timing-function, visibility $duration $timing-function;
 
@@ -18,6 +17,18 @@
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
+    transition: opacity $duration $timing-function, visibility $duration $timing-function;
+  }
+
+  @media screen and (min-width: 1366px) {
+    overflow: hidden;
+    @media screen and (max-height: 820px) {
+      overflow: auto;
+    }
+  }
+
+  @media screen and (max-height: 610px) {
+    overflow: auto;
   }
 }
 
@@ -30,34 +41,42 @@
   max-width: 450px;
   height: 100%;
   max-height: 609px;
-  overflow: auto;
+  // overflow: auto;
 
   background-color: $bg-modal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
+  transform: perspective(600px) translate(-50%, -150%) rotateX(45deg);
   opacity: 0;
   pointer-events: none;
-  transition: transform $duration $timing-function, opacity $duration $timing-function;
+  transition: transform $duration $timing-function $delay, opacity $duration $timing-function $delay;
 
   &.is-open {
-    // transform: perspective(600px) translate(-50%, -150%) rotateX(45deg);
+    transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
+    transition: transform $duration $timing-function $delay,
+      opacity $duration $timing-function $delay;
     opacity: 1;
     pointer-events: visible;
   }
 
-  // @media screen and (min-width: 1366px) {
-  //   min-width: 528px;
-  //   min-height: 581px;
-  // }
+  @media screen and (min-width: 1366px) {
+    min-width: 600px;
+    min-height: 820px;
+    overflow: hidden;
+    @media screen and (max-height: 820px) {
+      overflow: auto;
+      &.is-open {
+        top: 0;
+        transform: perspective(600px) translate(-50%, 0) rotateX(0deg);
+      }
+    }
+  }
 
-  //   @media screen and (max-height: 610px) {
-  //     top: 0;
-  //     left: 50%;
-  //     transform: perspective(600px) translate(-50%, 0) rotateX(0deg);
-  //   }
+  @media screen and (max-height: 610px) {
+    overflow: auto;
+  }
 }
 
 .modal-certificate__item {
@@ -100,9 +119,9 @@
   left: 50%;
   padding: 40px;
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   height: 100%;
-  max-height: 250px;
+  max-height: 320px;
   overflow: auto;
 
   background-color: $bg-modal;
@@ -110,13 +129,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
+  transform: perspective(600px) translate(-50%, 150%) rotateX(45deg);
   opacity: 0;
   pointer-events: none;
   transition: transform $duration $timing-function, opacity $duration $timing-function;
 
   &.is-open {
-    // transform: perspective(600px) translate(-50%, -150%) rotateX(45deg);
+    transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
+    // transition: transform $duration $timing-function, opacity $duration $timing-function;
     opacity: 1;
     pointer-events: visible;
   }
@@ -167,4 +187,8 @@
   .modal-form__input:focus ~ & {
     fill: $color-accent;
   }
+}
+
+.modal-form__block-button {
+  margin-top: 30px;
 }
