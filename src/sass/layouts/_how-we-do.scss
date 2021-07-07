@@ -2,7 +2,6 @@
   background: $color-text-accent;
 }
 .position {
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 // .container {
@@ -215,6 +214,9 @@
     font-size: 46px;
     text-align: left;
     margin-bottom: 60px;
+  }
+  .title-top {
+    width: 101%;
   }
 }
 .how-we__link {
