@@ -1,0 +1,153 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 0;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+}
+
+.footer-block__desktop {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer .footer-logo {
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    // margin-right: 50px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    // margin-right: 40px;
+  }
+}
+
+.footer-tell__icon {
+  fill: $color-accent;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: $color-accent;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer-list {
+  padding-bottom: 30px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    text-align: right;
+    align-items: center;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    margin-left: 290px;
+  }
+}
+
+.footer-tel__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  color: $color-title;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+  }
+}
+
+.footer-link_inst {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 24px;
+  }
+}
+
+.footer-item:first-child {
+  margin-bottom: 30px;
+}
+
+.footer-item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    height: fit-content;
+    border-right: 1px solid $color-title;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin: 0;
+  }
+}
+
+.footer_container--black {
+  // padding: 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1366px) {
+  }
+}
+
+.copyright {
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: $color-text;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 0;
+    text-align: left;
+    text-align: left;
+    // margin-left: 20px;
+    width: 768px;
+  }
+}
+
+.copyright-black {
+  background-color: $color-title;
+}

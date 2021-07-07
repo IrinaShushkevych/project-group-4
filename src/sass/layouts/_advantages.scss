@@ -1,0 +1,185 @@
+.hidden {
+  visibility: hidden;
+}
+.distance {
+  margin-top: 30px;
+  margin-bottom: 44px;
+}
+.container-advantages {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    // padding-left: 40px;
+    // padding-right: 40px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 1366px;
+
+    // padding-left: 183px;
+    // padding-right: 183px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__list {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .advantages__title {
+    font-size: 14px;
+    line-height: 164.9%;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: $color-title;
+    position: relative;
+    padding-left: 10px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  .advantages__item {
+    display: flex;
+    padding-left: 100px;
+    height: 63px;
+    padding-right: 53px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.advantages__title::before {
+  position: absolute;
+  width: 61px;
+  height: 63px;
+  content: '';
+  background-image: url('../images/advantages/student-advan.svg');
+  background-repeat: no-repeat;
+  left: -50%;
+  top: 1px;
+}
+.title-before::before {
+  position: absolute;
+  width: 61px;
+  height: 63px;
+  content: '';
+  background-image: url('../images/advantages/mobile-advan.svg');
+  background-repeat: no-repeat;
+  left: -50%;
+  top: 1px;
+}
+.title-finans::before {
+  position: absolute;
+  width: 61px;
+  height: 63px;
+  content: '';
+  background-image: url('../images/advantages/finans-advan.svg');
+  background-repeat: no-repeat;
+  left: -50%;
+  top: 1px;
+}
+
+// tablet>>>>>>>
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    width: 142px;
+    height: 69px;
+    font-size: 14px;
+    line-height: 164.9%;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: $color-title;
+    position: relative;
+  }
+  .list-item {
+    padding-left: 72px;
+  }
+  .advantages__list {
+    display: flex;
+    width: 688px;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+// PK>>>>>>
+@media screen and (min-width: 1366px) {
+  // .container-advantages {
+  //   padding-left: 0px;
+  //   padding-right: 0px;
+  // }
+
+  .distance {
+    margin-bottom: 130px;
+  }
+
+  .advantages__list {
+    width: 1344px;
+    height: 102px;
+    justify-content: space-between;
+  }
+
+  .advantages__item:not(:first-child) {
+    margin-left: 82px;
+  }
+  .advantages__title {
+    width: 366px;
+    height: 66px;
+    font-size: 20px;
+    line-height: 164.9%;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0.08em;
+    color: $color-title;
+    position: relative;
+    padding-left: 3px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .advantages__title::before {
+    position: absolute;
+    width: 102px;
+    height: 104px;
+    content: '';
+    background-image: url('../images/advantages/studentpk.svg');
+    background-repeat: no-repeat;
+    left: -22%;
+    top: -25%;
+  }
+  .title-before::before {
+    position: absolute;
+    width: 102px;
+    height: 104px;
+    content: '';
+    background-image: url('../images/advantages/mobilepk.svg');
+    background-repeat: no-repeat;
+    left: -22%;
+    top: -25%;
+  }
+  .title-finans::before {
+    position: absolute;
+    width: 102px;
+    height: 104px;
+    content: '';
+    background-image: url('../images/advantages/finanpk.svg');
+    background-repeat: no-repeat;
+    left: -22%;
+    top: -25%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .list-item {
+    padding-left: 81px;
+  }
+}
