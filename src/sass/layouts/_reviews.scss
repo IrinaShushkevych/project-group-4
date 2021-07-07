@@ -7,7 +7,7 @@ letter-spacing: 0.03em;
 color: #111518;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 margin:0 auto;
-margin-bottom:15px;
+margin-bottom:24px;
 width:168px;
 }
 @media screen and (min-width:768px){
@@ -16,6 +16,7 @@ width:168px;
     margin:0 auto;
     margin-bottom:30px;
     font-size: 26px;
+    
         }}
         @media screen and (min-width:1366px){
             .reviews__header{
@@ -23,6 +24,7 @@ width:168px;
             margin:0 auto;
             margin-bottom:50px;
             font-size: 46px;
+          
                 }}
 
 .reviews__container{
@@ -31,26 +33,29 @@ align-items: center;
 justify-content: center;
 text-align: center;
 // width:320px;
-padding:0 20px;
-margin:0 auto;
+// padding:50px 20px;
+margin:50px 20px;
 
 }
 
 
 @media screen and (min-width:768px){
     .reviews__container{
-        width:713px;
+        width:712px;
         text-align:left;
         position:relative;
-        padding-left:12px;
-        padding-right:12px;
-    }
+        padding:0;
+        align-items: center;
+justify-content: center;
+margin:0 auto;
+margin-top: 50px;
+margin-bottom:50px;
+          }
 }
  @media screen and (min-width:1366px){
      .reviews__container{
         width:1258px;
-        padding-left:54px;
-        padding-right:54px;
+        margin:130px 54px;
         position:relative;
          }
  }
@@ -77,15 +82,7 @@ margin:0 auto;
          padding-right:112px;
          padding-left:82px;
          }}
-.reviews__container-graduate-story{
-background-color: #FFFFFF;
-padding-bottom:30px;
-padding-right:20px;
-padding-left:20px;
-margin-bottom:20px;
-background: #FFFFFF;
-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-}
+
 
 @media screen and (min-width:768px){
     .reviews__container-graduate-story{
@@ -94,6 +91,11 @@ box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         margin-bottom:30px;
         width:688px;
         position:relative;
+background-color: #FFFFFF;
+background: #FFFFFF;
+box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+
     }}
     @media screen and (min-width:1366px){
         .reviews__container-graduate-story{
@@ -109,28 +111,17 @@ box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
    @media screen and (min-width:768px){
     .reviews__graduate-photo{
         width:150px;
-    
-       }
+           }
 }
 
 .reviews__icon-social-net{
     display: block;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:27px;
+    padding:0;
     margin:0 auto;
 fill:#436EAB;
        }
-
-@media screen and (min-width:768px){       
-.reviews__photo-position{
-    position:relative;
-    margin-right: 46px;
-}}
-@media screen and (min-width:1366px){       
-    .reviews__photo-position{
-       
-        margin-right: 40px;
-    }}
 @media screen and (min-width:768px){
     .reviews__icon-social-net{
 margin:0;
@@ -146,6 +137,17 @@ bottom:70px;
 left:60px;
     }
 }
+@media screen and (min-width:768px){       
+.reviews__photo-position{
+    position:relative;
+    margin-right: 46px;
+}}
+@media screen and (min-width:1366px){       
+    .reviews__photo-position{
+       
+        margin-right: 40px;
+    }}
+
 .reviews__graduate-card{
     max-width:240px;
     margin:0 auto;
@@ -168,7 +170,7 @@ line-height: 1.21;
 text-align: center;
 letter-spacing: 0.08em;
 color: #FF6B09;
-margin-bottom:10px;
+margin-bottom:16px;
 margin-top:20px;
 }
 @media screen and (min-width:768px){
@@ -186,18 +188,18 @@ margin-top:0;
         font-size: 30px;
 line-height: 1.24;
 margin-bottom:20px;
-margin-top:0;
+// margin-top:0;
     }
 }
 .reviews__graduate-description-first{
 font-weight: 500;
 font-size: 12px;
-line-height: 1.26;
+line-height: 1.25;
 text-align: center;
 letter-spacing: 0.08em;
 color: #B9B9B9;
 margin-top:0;
-margin-bottom:25px;
+margin-bottom:16px;
 }
 @media screen and (min-width:768px){
     .reviews__graduate-description-first{
@@ -221,9 +223,8 @@ line-height: 1.67;
     color: #3D3D3D;
     margin-top:0;
     margin-bottom:0;
-    padding-bottom:72px;
-    padding-right:20px;
-    padding-left:20px;
+    padding-bottom:62px;
+    
     // height:257px;
 }
 @media screen and (min-width:768px){
@@ -272,6 +273,8 @@ list-style: none;
     align-items:center;
     justify-content: center;
     padding-left:0;
+   margin-top: 0;
+   margin-bottom:0;
 }
 @media screen and (min-width:768px){
     .reviews__slider-list{
@@ -320,14 +323,14 @@ display:none;
     .reviews__slider-icon-left{
        position:absolute;
    top:45%;
-   left:-1%;
+   left:1%;
    cursor: pointer;
     }}
     @media screen and (min-width:768px){
         .reviews__slider-icon-right{
            position:absolute;
        top:45%;
-       right:-1%;
+       right:1%;
        cursor: pointer;
         }}
 
