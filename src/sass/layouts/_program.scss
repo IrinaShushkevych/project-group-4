@@ -67,7 +67,7 @@
 .border {
   position: absolute;
   top: 1%;
-  height: 1235px;
+  height: 1250px;
   border-left: 1px solid $color-text-accent;
 
   @media screen and (min-width: 768px) {
@@ -238,7 +238,7 @@
 }
 
 .semester-program-list__item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
