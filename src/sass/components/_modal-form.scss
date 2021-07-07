@@ -100,9 +100,9 @@
   left: 50%;
   padding: 40px;
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   height: 100%;
-  max-height: 250px;
+  max-height: 320px;
   overflow: auto;
 
   background-color: $bg-modal;
@@ -167,4 +167,8 @@
   .modal-form__input:focus ~ & {
     fill: $color-accent;
   }
+}
+
+.modal-form__block-button {
+  margin-top: 30px;
 }
