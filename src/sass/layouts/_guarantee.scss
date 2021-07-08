@@ -1,6 +1,6 @@
 .guarantee-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  // padding-bottom: 80px;
   width: 100%;
   margin: 0 auto;
 }
@@ -12,7 +12,6 @@
   padding-bottom: 30px;
 
   background-color: #f1f1f1;
-
 }
 .guarantee-title {
   font-family: Montserrat;
@@ -23,7 +22,6 @@
   letter-spacing: 0.03em;
   color: ($color-title);
   margin-bottom: 30px;
-
 }
 .guarantee-list-item {
   display: flex;
@@ -106,9 +104,12 @@
 }
 
 @media screen and(min-width:1366px) {
+  .guarantee-section {
+    padding-top: 105px;
+  }
   .guarantee {
     padding-top: 153px;
-    padding-bottom: 107px;
+    // padding-bottom: 107px;
   }
   .guarantee-container {
     padding-left: 112px;

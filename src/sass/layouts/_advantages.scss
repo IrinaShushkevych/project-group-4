@@ -1,9 +1,19 @@
 .hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .distance {
-  margin-top: 30px;
-  margin-bottom: 44px;
+  padding-top: 30px;
+  padding-bottom: 46px;
 }
 .container-advantages {
   margin-top: 0;
@@ -88,6 +98,9 @@
 
 // tablet>>>>>>>
 @media screen and (min-width: 768px) {
+  .distance {
+    padding-top: 46px;
+  }
   .advantages__title {
     width: 142px;
     height: 69px;
@@ -120,7 +133,8 @@
   // }
 
   .distance {
-    margin-bottom: 130px;
+    padding-top: 90px;
+    padding-bottom: 120px;
   }
 
   .advantages__list {
