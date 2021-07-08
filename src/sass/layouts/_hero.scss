@@ -1,16 +1,19 @@
 .hero .container {
   padding-top: 54px;
-  padding-bottom: 46px;
+  padding-bottom: 280px;
 
   @media screen and (min-width: 768px) {
     @include flex;
+    align-items: start;
     padding-top: 88px;
     padding-bottom: 138px;
+    padding-right: 281px;
   }
 
   @media screen and (min-width: 1366px) {
     padding-top: 100px;
     padding-bottom: 250px;
+    padding-right: 842px;
   }
 }
 
@@ -116,19 +119,19 @@
 
 .hero__block-img {
   position: relative;
-  width: 208px;
-  height: 178px;
+  // width: 208px;
+  // height: 178px;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-    width: 376px;
-    height: 286px;
+    // width: 376px;
+    // height: 286px;
     margin: 0;
   }
 
   @media screen and (min-width: 1366px) {
-    width: 842px;
-    height: 470px;
+    // width: 842px;
+    // height: 470px;
   }
 }
 
@@ -136,6 +139,11 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @media screen and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   // width: 100%;
   width: 208px;
   height: 178px;
@@ -150,13 +158,14 @@
   @media screen and (min-width: 768px) {
     width: 376px;
     height: 320px;
+    left: -56px;
   }
 
   @media screen and (min-width: 1366px) {
     width: 842px;
     height: 718px;
-    top: -40px;
-    left: -61px;
+    top: -54px;
+    left: 16px;
   }
 }
 
