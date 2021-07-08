@@ -4,6 +4,7 @@
 
   @media screen and (min-width: 768px) {
     @include flex;
+    justify-content: start;
     align-items: start;
     padding-top: 88px;
     padding-bottom: 138px;
@@ -158,7 +159,7 @@
   @media screen and (min-width: 768px) {
     width: 376px;
     height: 320px;
-    left: -56px;
+    left: -16px;
   }
 
   @media screen and (min-width: 1366px) {
