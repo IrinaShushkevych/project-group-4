@@ -4,8 +4,8 @@
   padding-bottom: 25px;
 
   @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, $color-title 68%, $color-text-accent 68% 100%);
     padding-top: 60px;
-    top: -30px;
   }
 
   @media screen and (min-width: 1366px) {
@@ -16,7 +16,6 @@
     background-repeat: no-repeat;
     padding-top: 102px;
     padding-bottom: 65px;
-    top: -25px;
   }
 }
 .problems__title {
@@ -29,6 +28,9 @@
     color: $color-accent;
   }
 
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 40px;
+  }
   @media screen and (min-width: 1366px) {
     margin-bottom: 70px;
     @include fonts($font, 800, 46px, 1.3);
@@ -45,7 +47,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    padding: 55px 45px 30px 96px;
+    padding: 55px 96px 30px 96px;
   }
   @media screen and (min-width: 1366px) {
     padding: 113px 112px 62px 112px;
@@ -75,8 +77,11 @@
     border-radius: 2px;
     background-color: $color-accent;
     left: 0px;
-    // top: -30px;
-    top: -25px;
+    top: -30px;
+
+    @media screen and (min-width: 1366px) {
+      top: -25px;
+    }
   }
 
   &::before {
