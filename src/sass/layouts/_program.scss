@@ -1,6 +1,7 @@
 .program {
   padding-top: 60px;
   padding-bottom: 537px;
+  overflow: hidden;
 
   background-color: $color-title;
 
@@ -66,7 +67,7 @@
 .border {
   position: absolute;
   top: 1%;
-  height: 1235px;
+  height: 1250px;
   border-left: 1px solid $color-text-accent;
 
   @media screen and (min-width: 768px) {
@@ -75,7 +76,6 @@
 
   @media screen and (min-width: 1366px) {
     display: none;
-    left: 50%;
   }
 }
 
@@ -139,9 +139,35 @@
 }
 
 .program-list__item {
+  transform: translateX(200px);
+  opacity: 0;
+
+  transition: opacity 250ms $timing-function, transform 250ms $timing-function;
+
   @media screen and (min-width: 1366px) {
     width: calc((100% - 4 * 30px) / 5);
+
+    &:nth-child(2) {
+      transition: opacity 350ms $timing-function 200ms, transform 350ms $timing-function 200ms;
+    }
+
+    &:nth-child(3) {
+      transition: opacity 350ms $timing-function 400ms, transform 350ms $timing-function 400ms;
+    }
+
+    &:nth-child(4) {
+      transition: opacity 350ms $timing-function 600ms, transform 350ms $timing-function 600ms;
+    }
+
+    &:nth-child(5) {
+      transition: opacity 350ms $timing-function 800ms, transform 350ms $timing-function 800ms;
+    }
   }
+}
+
+.program-list__item.active-anim {
+  transform: translateX(0px);
+  opacity: 1;
 }
 
 .program-list__item:not(:last-child) {
@@ -186,6 +212,7 @@
     display: inline-block;
     width: 12px;
     border-bottom: 1px solid $color-accent;
+    visibility: visible;
   }
 
   @media screen and (min-width: 1366px) {
@@ -199,13 +226,19 @@
 }
 
 .semester-program-list__title--last-title {
+  visibility: hidden;
+
+  &::before {
+    visibility: visible;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     margin-bottom: 16px;
   }
 }
 
 .semester-program-list__item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;

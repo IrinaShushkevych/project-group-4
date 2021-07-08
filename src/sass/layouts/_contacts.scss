@@ -52,6 +52,22 @@
     background-image: url(../images/contacts/contacts-desktop@2x.png);
   }
 }
+
+.title-contacts--block {
+  padding-left: 66px;
+  padding-right: 66px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .title-contacts {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
@@ -67,7 +83,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1366px) {
@@ -79,26 +95,51 @@
   color: $color-accent;
 }
 
+.text-contacts--block {
+  padding-left: 74px;
+  padding-right: 74px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.text-contacts--block-last {
+  padding-left: 74px;
+  padding-right: 74px;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 56px;
+  }
+}
+
 .text-contacts {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: $color-text-accent;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   letter-spacing: 0.08em;
-  margin-bottom: 44px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 23px;
+    line-height: 1.21;
   }
 
   @media screen and (min-width: 1366px) {
     font-size: 30px;
-    line-height: 37px;
-    margin-bottom: 56px;
+    line-height: 1.23;
   }
 }
 
