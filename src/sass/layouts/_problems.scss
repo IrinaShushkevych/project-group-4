@@ -56,8 +56,8 @@
 }
 
 .problems__item {
-  transform: translateY(200px);
-  opacity: 0;
+  // transform: translateY(200px);
+  // opacity: 0;
 
   position: relative;
   @include fonts($font, 800, 14px, 1.43);
@@ -140,7 +140,7 @@
     }
   }
 }
-.problems__item.active-anim {
-  transform: translateY(0px);
-  opacity: 1;
-}
+// .problems__item.active-anim {
+//   transform: translateY(0px);
+//   opacity: 1;
+// }
