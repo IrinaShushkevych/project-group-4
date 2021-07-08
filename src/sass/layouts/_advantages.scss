@@ -208,36 +208,36 @@
 //     transform: scale(1, 1) translateY(0);
 //   }
 // }
-.advantages__list .active-anim {
-  animation-name: advantages;
-  -webkit-animation-name: advantages;
+// .advantages__list .active-anim {
+//   animation-name: advantages;
+//   -webkit-animation-name: advantages;
 
-  animation-duration: 2.5s;
-  -webkit-animation-duration: 2.5s;
+//   animation-duration: 2.5s;
+//   -webkit-animation-duration: 2.5s;
 
-  animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-}
-@keyframes advantages {
-  0% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(4deg);
-  }
-  100% {
-    transform: rotate(-4deg);
-  }
-}
+//   animation-iteration-count: 1;
+//   -webkit-animation-iteration-count: 1;
+// }
+// @keyframes advantages {
+//   0% {
+//     transform: rotate(-4deg);
+//   }
+//   50% {
+//     transform: rotate(4deg);
+//   }
+//   100% {
+//     transform: rotate(-4deg);
+//   }
+// }
 
-@-webkit-keyframes advantages {
-  0% {
-    -webkit-transform: rotate(-4deg);
-  }
-  50% {
-    -webkit-transform: rotate(4deg);
-  }
-  100% {
-    -webkit-transform: rotate(-4deg);
-  }
-}
+// @-webkit-keyframes advantages {
+//   0% {
+//     -webkit-transform: rotate(-4deg);
+//   }
+//   50% {
+//     -webkit-transform: rotate(4deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(-4deg);
+//   }
+// }
