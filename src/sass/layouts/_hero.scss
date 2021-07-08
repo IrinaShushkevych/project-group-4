@@ -1,7 +1,23 @@
+.hero .container {
+  padding-top: 54px;
+  padding-bottom: 46px;
+
+  @media screen and (min-width: 768px) {
+    @include flex;
+    padding-top: 88px;
+    padding-bottom: 138px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 100px;
+    padding-bottom: 250px;
+  }
+}
+
 .section-title {
   @include fonts($font, 800, 20px, 1.3);
   .hero & {
-    margin-bottom: 55px;
+    margin-bottom: 8px;
     // transform: translateY(120%);
     // opacity: 0;
     // transition: transform $duration $timing-function $delay,
@@ -16,26 +32,12 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     .hero & {
-      margin-bottom: 95px;
+      margin-bottom: 8px;
     }
   }
 
   @media screen and (min-width: 1366px) {
     font-size: 58px;
-  }
-}
-
-.hero .container {
-  padding-top: 70px;
-  padding-bottom: 36px;
-
-  @media screen and (min-width: 768px) {
-    @include flex;
-    padding-bottom: 55px;
-  }
-
-  @media screen and (min-width: 1366px) {
-    padding-bottom: 60px;
   }
 }
 
@@ -68,7 +70,7 @@
 
   &--accent {
     color: $color-accent;
-    margin-bottom: 30px;
+    margin-bottom: 52px;
     // transform: translateY(200%);
     // opacity: 0;
     // transition: transform $duration $timing-function $delay,
@@ -94,7 +96,7 @@
 
   @media screen and (min-width: 768px) {
     &--accent {
-      margin-bottom: 30px;
+      margin-bottom: 52px;
     }
   }
 
@@ -102,7 +104,7 @@
     font-size: 20px;
     line-height: 1.65;
     &--accent {
-      margin-bottom: 30px;
+      margin-bottom: 52px;
       margin-left: 5px;
       color: $color-title;
     }
@@ -120,13 +122,13 @@
 
   @media screen and (min-width: 768px) {
     width: 376px;
-    height: 320px;
+    height: 286px;
     margin: 0;
   }
 
   @media screen and (min-width: 1366px) {
     width: 842px;
-    height: 718px;
+    height: 470px;
   }
 }
 
@@ -134,7 +136,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  // width: 100%;
+  width: 208px;
+  height: 178px;
 
   // transform: scale(0);
   // transition: transform $duration $timing-function $delay;
@@ -145,15 +149,18 @@
 
   @media screen and (min-width: 768px) {
     width: 376px;
+    height: 320px;
   }
 
   @media screen and (min-width: 1366px) {
     width: 842px;
+    height: 718px;
+    top: -40px;
   }
 }
 
 .hero .button {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
   text-decoration: none;
   display: inline-block;
 
@@ -161,7 +168,7 @@
   // transition: transform $duration $timing-function $delay * 5;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     margin-left: 0;
   }
 

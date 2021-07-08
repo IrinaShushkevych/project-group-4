@@ -1,9 +1,16 @@
 .how-we {
   background: $color-text-accent;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
-.position {
-  margin-bottom: 50px;
-}
+// .position {
+//   margin-bottom: 50px;
+// }
 // .container {
 //   padding-left: 20px;
 //   padding-right: 20px;
