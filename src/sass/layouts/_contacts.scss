@@ -1,5 +1,5 @@
 .contacts__overlay {
-  padding: 50px 0px;
+  padding: 56px 0px;
   background-color: $color-title;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-image: url(../images/contacts/contacts-mobile.png);
@@ -17,7 +17,7 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 66px;
-    padding-bottom: 62px;
+    padding-bottom: 66px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -35,6 +35,7 @@
 
   @media screen and (min-width: 1366px) {
     padding-top: 100px;
+    padding-bottom: 62px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -52,8 +53,8 @@
 }
 
 .title-contacts--block {
-  padding-left: 66px;
-  padding-right: 66px;
+  // padding-left: 66px;
+  // padding-right: 66px;
 
   @media screen and (min-width: 768px) {
     padding-left: 10px;
@@ -94,8 +95,8 @@
 }
 
 .text-contacts--block {
-  padding-left: 74px;
-  padding-right: 74px;
+  // padding-left: 74px;
+  // padding-right: 74px;
 
   @media screen and (min-width: 768px) {
     padding-left: 0px;
@@ -104,8 +105,8 @@
 }
 
 .text-contacts--block-last {
-  padding-left: 74px;
-  padding-right: 74px;
+  // padding-left: 74px;
+  // padding-right: 74px;
   margin-bottom: 44px;
 
   @media screen and (min-width: 768px) {
