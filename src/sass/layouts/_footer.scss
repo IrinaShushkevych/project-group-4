@@ -222,15 +222,33 @@
 //   }
 // }
 
-// .footer-link_inst:focus,
-// .footer-link_inst:hover {
-//   animation: spin 3s linear 0s infinite;
-// }
-// @keyframes spin {
-//   from {
-//     transform: rotateY(0deg);
-//   }
-//   to {
-//     transform: rotateY(360deg);
-//   }
-// }
+.footer-tell__icon {
+  animation: animation 3000ms infinite 250ms;
+
+  @keyframes animation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(30deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.footer-link_inst:focus,
+.footer-link_inst:hover {
+  animation: spin 3s linear 0s infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
