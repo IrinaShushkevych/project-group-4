@@ -13,3 +13,19 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+//slider//
+new Swiper('.reviews__swiper-slider',{
+  navigation:{
+    nextEl:'.swiper-button-next',
+    prevEl:'.swiper-button-prev'
+  },
+
+  pagination:{
+    el:'.swiper-pagination',
+    clickable:true,
+dynamicBullets:true,
+renderBullet:function(index,className){
+  return '<span class="' + className+'">'+(index+1)+'</span>';
+},
+  },
+});

@@ -35,7 +35,7 @@
     justify-content: center;
     text-align: center;
     // width:320px;
-   
+   overflow:hidden;
     margin: 0 auto;
  margin-top: 50px;
     margin-bottom: 50px;
@@ -66,11 +66,13 @@
   }
   
   .reviews__list {
+    display:flex;
     list-style: none;
     text-decoration: none;
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
+
   }
   
   @media screen and (min-width: 768px) {
@@ -105,6 +107,7 @@
     .reviews__container-graduate-story {
       width: 1090px;
       margin-bottom: 40px;
+
     }
   }
   
@@ -612,3 +615,9 @@
       margin-right: 30px;
     }
   }
+
+
+.swiper-slide{
+   min-width:0;
+}
+
