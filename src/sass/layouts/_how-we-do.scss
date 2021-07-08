@@ -76,6 +76,7 @@
     position: absolute;
     bottom: -20px;
     left: 50%;
+    transform: translate(-50%, -50%);
     align-items: center;
     display: block;
     content: '';
@@ -83,6 +84,40 @@
     height: 2px;
     background-color: $color-accent;
     border-radius: 2px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .how-we__list .active-anim:hover .how-we__item-title::after,
+  .how-we__list .active-anim:focus .how-we__item-title::after {
+    animation-name: after;
+    -webkit-animation-name: after;
+
+    animation-duration: 1800ms;
+    -webkit-animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @keyframes after {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scaleX(9);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  @-webkit-keyframes after {
+    0% {
+      -webkit-transform: scale(0.95);
+    }
+    50% {
+      -webkit-transform: scaleX(9);
+    }
+    100% {
+      -webkit-transform: scale(0.95);
+    }
   }
 }
 .how-we__icon {
@@ -164,6 +199,7 @@
     bottom: -26px;
     left: 50%;
     align-items: center;
+    transform: translate(-50%, -50%);
     display: block;
     content: '';
     width: 15px;
@@ -288,5 +324,76 @@
     height: 2px;
     background-color: $color-accent;
     border-radius: 2px;
+  }
+}
+
+.how-we__list .active-anim:hover,
+.how-we__list .active-anim:focus {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+
+  animation-duration: 1800ms;
+  -webkit-animation-duration: 1800ms;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+  }
+}
+@media screen and (min-width: 768px) {
+  .how-we__list .active-anim:hover .how-we__item-title::after,
+  .how-we__list .active-anim:focus .how-we__item-title::after {
+    animation-name: pulseafter;
+    -webkit-animation-name: pulseafter;
+
+    animation-duration: 1800ms;
+    -webkit-animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @keyframes pulseafter {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scaleX(20);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+  @-webkit-keyframes pulseafter {
+    0% {
+      -webkit-transform: scale(0.95);
+    }
+    50% {
+      -webkit-transform: scaleX(20);
+    }
+    100% {
+      -webkit-transform: scale(0.95);
+    }
   }
 }
