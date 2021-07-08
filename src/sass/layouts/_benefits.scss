@@ -114,11 +114,15 @@
     position: absolute;
     content: '';
     height: 2px;
-    width: 14px;
+    width: 18px;
     border-radius: 2px;
     background-color: $color-accent;
     left: 0px;
+    top: -25px;
+
+    @media screen and (min-width: 767px)and (max-width: 1365px) {
     top: -30px;
+  }
   }
 
   &::before {
@@ -129,8 +133,15 @@
     @include fonts($font, 800, 14px, 1.21);
     letter-spacing: 0.08em;
     color: $color-accent;
-    left: 22px;
+    left: 26px;
     top: -37px;
+
+ @media screen and (max-width: 768px) {
+      top: -33px;
+    }
+  @media screen and (min-width: 1366px) {
+      @include fonts($font, 800, 20px, 1.4);
+    }
   }
 
   @media screen and (min-width: 768px) {
