@@ -1,9 +1,16 @@
 .how-we {
   background: $color-text-accent;
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 65px;
+    padding-bottom: 130px;
+  }
 }
-.position {
-  margin-bottom: 50px;
-}
+// .position {
+//   margin-bottom: 50px;
+// }
 // .container {
 //   padding-left: 20px;
 //   padding-right: 20px;
@@ -213,7 +220,7 @@
   .how-we__title {
     font-size: 46px;
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .title-top {
     width: 101%;
