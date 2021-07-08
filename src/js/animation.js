@@ -38,9 +38,9 @@
       }
     }
 
-    // setTimeout(() => {
-    //   animOnScroll();
-    // }, 300);
+    setTimeout(() => {
+      animOnScroll();
+    }, 300);
 
     window.addEventListener('scroll', animOnScroll);
     animOnScroll();
