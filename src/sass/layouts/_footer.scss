@@ -30,12 +30,7 @@
 
   @media screen and (min-width: 768px) {
     text-align: left;
-    // margin-right: 50px;
   }
-
-  // @media screen and (min-width: 1366px) {
-  //   // margin-right: 40px;
-  // }
 }
 
 .footer-tell__icon {
@@ -105,41 +100,41 @@
   width: 40px;
   height: 40px;
   display: block;
-  border-radius: 10px;
-  background-image: url(../images/instagram-1.svg);
-  // radial-gradient(
-  //   110.28% 110.28% at 20.5% 87.39%,
-  //   #fae100 0,
-  //   #fadc04 5.44%,
-  //   #fbce0e 11.67%,
-  //   #fcb720 18.29%,
-  //   #fe9838 25.14%,
-  //   #ff7950 30.54%,
-  //   #ff1c74 49.22%,
-  //   #6c1cd1 100%
-  // ),
-  // linear-gradient(318.52deg, rgba(131, 58, 180, 0) 64.74%, #833ab4 106.74%),
-  // linear-gradient(315deg, rgba(131, 58, 180, 0) 39.5%, #833ab4 115.97%),
-  // linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
-  // linear-gradient(314.85deg, rgba(131, 58, 180, 0) 68.66%, #833ab4 99.14%),
-  // linear-gradient(
-  //   180deg,
-  //   rgba(250, 225, 0, 0) 41.26%,
-  //   rgba(252, 168, 0, 0.305882) 65.21%,
-  //   rgba(254, 115, 0, 0.627451) 90.26%,
-  //   rgba(255, 82, 0, 0.866667) 109.08%,
-  //   #ff4500 119.35%
-  // ),
-  // linear-gradient(
-  //   299.36deg,
-  //   rgba(161, 181, 216, 0) 61.06%,
-  //   rgba(144, 162, 189, 0.309804) 110.82%,
-  //   rgba(124, 139, 156, 0.756863) 182.56%,
-  //   #748290 221.9%
-  // );;
-  // background-image: url(../images/instagram-1.svg);
+
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  border-radius: 10px;
+  background-image: url(../images/instagram.svg),
+    radial-gradient(
+      110.28% 110.28% at 20.5% 87.39%,
+      #fae100 0,
+      #fadc04 5.44%,
+      #fbce0e 11.67%,
+      #fcb720 18.29%,
+      #fe9838 25.14%,
+      #ff7950 30.54%,
+      #ff1c74 49.22%,
+      #6c1cd1 100%
+    ),
+    linear-gradient(318.52deg, rgba(131, 58, 180, 0) 64.74%, #833ab4 106.74%),
+    linear-gradient(315deg, rgba(131, 58, 180, 0) 39.5%, #833ab4 115.97%),
+    linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
+    linear-gradient(314.85deg, rgba(131, 58, 180, 0) 68.66%, #833ab4 99.14%),
+    linear-gradient(
+      180deg,
+      rgba(250, 225, 0, 0) 41.26%,
+      rgba(252, 168, 0, 0.305882) 65.21%,
+      rgba(254, 115, 0, 0.627451) 90.26%,
+      rgba(255, 82, 0, 0.866667) 109.08%,
+      #ff4500 119.35%
+    ),
+    linear-gradient(
+      299.36deg,
+      rgba(161, 181, 216, 0) 61.06%,
+      rgba(144, 162, 189, 0.309804) 110.82%,
+      rgba(124, 139, 156, 0.756863) 182.56%,
+      #748290 221.9%
+    );
 
   @media screen and (min-width: 768px) {
     margin-left: 24px;
@@ -193,4 +188,35 @@
 
 .copyright-black {
   background-color: $color-title;
+}
+
+.footer-tell__icon {
+  animation: animation 3000ms infinite 250ms;
+
+  @keyframes animation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(30deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.footer-link_inst:focus,
+.footer-link_inst:hover {
+  animation: spin 3s linear 0s infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
