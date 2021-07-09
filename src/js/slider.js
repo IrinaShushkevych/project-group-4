@@ -4,11 +4,6 @@ let sliderBig = new Swiper('.reviews__swiper-slider', {
     prevEl: '.swiper-button-prev',
   },
 
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true,
-  //   },
-
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -39,8 +34,14 @@ let sliderBig = new Swiper('.reviews__swiper-slider', {
     swiper: {
       el: '.reviews__swiper-slider-min',
       breakpoints: {
-        0: { slidesPerView: 3 },
-        768: { slidesPerView: 7 },
+        0: {
+          slidesPerView: 3,
+          touchRatio: 2,
+        },
+        768: {
+          slidesPerView: 7,
+          touchRatio: 0,
+        },
       },
     },
   },
