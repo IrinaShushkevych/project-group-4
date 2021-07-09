@@ -609,6 +609,19 @@
 }
 
 //==================================================================
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: $color-accent;
+  font-size: 20px;
+  position: absolute;
+  top: 265px;
+  left: 0;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 0;
+  }
+}
 
 .reviews__swiper-slide-min img {
   border: none;
