@@ -1,14 +1,18 @@
 .contacts__overlay {
   padding: 56px 0px;
+
   background-color: $color-title;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-image: url(../images/contacts/contacts-mobile.png);
   background-position: center;
   background-repeat: no-repeat;
 
-  background-size: auto 100%;
-  text-align: center;
 
+  background-size: auto 100%;
+
+  text-align: center;
+  background-size: contain;
+  
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -54,9 +58,6 @@
 }
 
 .title-contacts--block {
-  // padding-left: 66px;
-  // padding-right: 66px;
-
   @media screen and (min-width: 768px) {
     padding-left: 10px;
     padding-right: 10px;
@@ -66,6 +67,11 @@
     padding-left: 110px;
     padding-right: 110px;
   }
+}
+
+.field-contacts {
+  animation: 2s slide-left;
+  animation-delay: 2s;
 }
 
 .title-contacts {
@@ -96,9 +102,6 @@
 }
 
 .text-contacts--block {
-  // padding-left: 74px;
-  // padding-right: 74px;
-
   @media screen and (min-width: 768px) {
     padding-left: 0px;
     padding-right: 0px;
@@ -106,8 +109,6 @@
 }
 
 .text-contacts--block-last {
-  // padding-left: 74px;
-  // padding-right: 74px;
   margin-bottom: 44px;
 
   @media screen and (min-width: 768px) {
@@ -184,12 +185,8 @@
   color: $color-text-accent;
 }
 
-.form-contacts {
+input[type='tel'] {
   margin-bottom: 50px;
-
-  @media screen and (min-width: 1366px) {
-    margin-bottom: 80px;
-  }
 }
 
 .contacts input[type='text'] {
@@ -199,10 +196,6 @@
     margin-bottom: 30px;
   }
 }
-
-// input:valid {
-//   background-color: transparent;
-// }
 
 input:invalid {
   border-color: red;

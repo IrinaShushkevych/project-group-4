@@ -36,7 +36,7 @@
 
 .how-we__item-title::after {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: 50%;
   align-items: center;
   display: flex;
@@ -74,8 +74,9 @@
 @media screen and (max-width: 767px) {
   .how-we__item-title::after {
     position: absolute;
-    bottom: 0%;
+    bottom: -20px;
     left: 50%;
+    transform: translate(-50%, -50%);
     align-items: center;
     display: block;
     content: '';
@@ -83,6 +84,40 @@
     height: 2px;
     background-color: $color-accent;
     border-radius: 2px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .how-we__list .active-anim:hover .how-we__item-title::after,
+  .how-we__list .active-anim:focus .how-we__item-title::after {
+    animation-name: after;
+    -webkit-animation-name: after;
+
+    animation-duration: 1800ms;
+    -webkit-animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @keyframes after {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scaleX(9);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  @-webkit-keyframes after {
+    0% {
+      -webkit-transform: scale(0.95);
+    }
+    50% {
+      -webkit-transform: scaleX(9);
+    }
+    100% {
+      -webkit-transform: scale(0.95);
+    }
   }
 }
 .how-we__icon {
@@ -106,6 +141,7 @@
   position: relative;
   // flex-grow: 1;
   height: 56px;
+  margin-bottom: 32px;
 }
 .how-we__item-text {
   font-weight: 500;
@@ -120,7 +156,8 @@
 // title
 .wrapper {
   width: 65%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // hover>>>>
@@ -145,6 +182,31 @@
 // tablet>>>>>
 
 @media screen and (min-width: 768px) {
+  .how-we__item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: $color-title;
+    position: relative;
+    // flex-grow: 1;
+    height: 56px;
+    margin-bottom: 52px;
+  }
+  .how-we__item-title::after {
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    display: block;
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: $color-accent;
+    border-radius: 2px;
+  }
   .how-we__list {
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +242,8 @@
 @media screen and (min-width: 768px) {
   .wrapper {
     width: 70%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 // @media screen and (min-width: 768px) {
@@ -252,7 +315,7 @@
 @media screen and (min-width: 1366px) {
   .how-we__item-title::after {
     position: absolute;
-    bottom: -50%;
+    bottom: -16px;
     left: 50%;
     align-items: center;
     display: block;
@@ -261,5 +324,76 @@
     height: 2px;
     background-color: $color-accent;
     border-radius: 2px;
+  }
+}
+
+.how-we__list .active-anim:hover,
+.how-we__list .active-anim:focus {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+
+  animation-duration: 1800ms;
+  -webkit-animation-duration: 1800ms;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+  }
+}
+@media screen and (min-width: 768px) {
+  .how-we__list .active-anim:hover .how-we__item-title::after,
+  .how-we__list .active-anim:focus .how-we__item-title::after {
+    animation-name: pulseafter;
+    -webkit-animation-name: pulseafter;
+
+    animation-duration: 1800ms;
+    -webkit-animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @keyframes pulseafter {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scaleX(20);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+  @-webkit-keyframes pulseafter {
+    0% {
+      -webkit-transform: scale(0.95);
+    }
+    50% {
+      -webkit-transform: scaleX(20);
+    }
+    100% {
+      -webkit-transform: scale(0.95);
+    }
   }
 }
