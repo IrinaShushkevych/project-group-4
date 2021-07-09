@@ -23,5 +23,7 @@
   };
 
   menuBtnRef.addEventListener('click', functionButton);
-  menuBtnRefClose.forEach(btn => { btn.addEventListener('click', functionButton) });
+  menuBtnRefClose.forEach(btn => {
+    btn.addEventListener('click', functionButton);
+  });
 })();
