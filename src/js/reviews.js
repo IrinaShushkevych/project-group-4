@@ -1,16 +1,25 @@
-function myFunction() {
-  console.log('review');
-  var dots = document.getElementById('dots');
-  var moreText = document.getElementById('more');
-  var btnText = document.getElementById('myBtn');
+(() => {
+  const btn = document.querySelectorAll('#myBtn');
 
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline';
-    btnText.innerHTML = 'Read more';
-    moreText.style.display = 'none';
-  } else {
-    dots.style.display = 'none';
-    btnText.innerHTML = '&nbspRead less';
-    moreText.style.display = 'inline';
+  function myFunction() {
+    var dots = document.querySelectorAll('#dots');
+    var moreText = document.querySelectorAll('#more');
+    var btnText = document.querySelectorAll('#myBtn');
+
+    for (let i = 0; i < dots.length; i++) {
+      if (dots[i].style.display === 'none') {
+        dots[i].style.display = 'inline';
+        btnText[i].innerHTML = 'Read more';
+        moreText[i].style.display = 'none';
+      } else {
+        dots[i].style.display = 'none';
+        btnText[i].innerHTML = '&nbspRead less';
+        moreText[i].style.display = 'inline';
+      }
+    }
   }
-}
+
+  btn.forEach(el => {
+    el.addEventListener('click', myFunction);
+  });
+})();
