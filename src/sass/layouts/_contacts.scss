@@ -5,8 +5,8 @@
   background-image: url(../images/contacts/contacts-mobile.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 
-  background-size: auto 100%;
   text-align: center;
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -37,6 +37,7 @@
   @media screen and (min-width: 1366px) {
     padding-top: 100px;
     padding-bottom: 62px;
+    background-size: auto 100%;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
